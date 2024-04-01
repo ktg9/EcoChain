@@ -1,12 +1,10 @@
 import {PluginParams} from './types';
-import * as fs from 'fs';
-import * as path from 'path';
 
-import {ERRORS} from './error';
 import {EcoChainGlobalConfig} from './types';
 import {validateGlobalConfig} from './validation';
 import {powCalculation} from './pow';
 import {posCalculation} from './pos';
+import {loadMetadata} from './helper';
 
 export const EcoChain = (
   globalConfig: EcoChainGlobalConfig
@@ -19,24 +17,13 @@ export const EcoChain = (
   };
 
   /**
-   * Load json metadata file.
-   * This file contains config about which blockchains are supported and their models for calculation
+   * Load config data
+   * - blockchainConfig: contains config about which blockchains are supported and their models for calculation
    * different environmental impacts.
-   * The file should locate in the same folder with source code file.
+   * - defaultBitcoinMiningShares: contain default bitcoin mining shares by countries
+   * - electricityWaterIntensity: electricity water intensity by countries in L/kWh
+   * - supportedBlockchains: supported blockchains, used to validate user input
    */
-
-  const loadMetadata = (metadataFilePath: string): any => {
-    try {
-      const fileData = fs.readFileSync(
-        path.resolve(__dirname, '..', '..', '..', 'config', metadataFilePath),
-        'utf-8'
-      );
-      return JSON.parse(fileData);
-    } catch (error) {
-      console.log(error);
-      throw new Error(ERRORS.LOADING_JSON_METADATA_FILE);
-    }
-  };
   const blockchainConfig = loadMetadata('ecochain_metadata.json');
   const defaultBitcoinMiningShares = loadMetadata('bitcoin_mining_shares.json');
   const electricityWaterIntensity = loadMetadata(
