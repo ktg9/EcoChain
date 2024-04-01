@@ -1,0 +1,102 @@
+{
+  "supported_blockchains": ["btc", "bch", "bsv", "dash", "doge", "ltc", "sol", "avax"],
+  "blockchain_config": {
+    "btc": {
+      "type": "pow",
+      "name": "Bitcoin",
+      "models": [
+        {
+          "type": "carbon",
+          "b0": 45854865.89077085,
+          "b1": 3.21680913e-13
+        },
+        {
+          "type": "ewaste",
+          "b0": 9302292.008423146,
+          "b1": 4.42885761e-14
+        }, {
+          "type": "fresh_water",
+          "b0": 90595506.70413834,
+          "b1": 6.35545318e-13
+        }
+
+      ]
+    },
+    "bch": {
+      "name": "Bitcoin Cash",
+      "type": "pow",
+      "models": [
+        {
+          "type": "carbon",
+          "b0": 225.00629710408225,
+          "b1": 3.93560793e-16
+        }
+      ]
+    },
+    "bsv": {
+      "name": "Bitcoin SV",
+      "type": "pow",
+      "models": [
+        {
+          "type": "carbon",
+          "b0": -41.31051423954841,
+          "b1": 5.94943458e-16
+        }
+      ]
+    },
+    "dash": {
+      "name": "Dash",
+      "type": "pow",
+      "models": [
+        {
+          "type": "carbon",
+          "b0": 4557.8714524787065,
+          "b1": 4.36287796e-11
+        }
+      ]
+    },
+    "doge": {
+      "name": "Dogecoin",
+      "type": "pow",
+      "models": [
+        {
+          "type": "carbon",
+          "b0": 1046.6121578388102,
+          "b1": 5.62926756e-12
+        }
+      ]
+    },
+    "ltc": {
+      "name": "Litecoin",
+      "type": "pow",
+      "models": [
+        {
+          "type": "carbon",
+          "b0": 217.79097350559005,
+          "b1": 6.67931768e-12
+        }
+      ]
+    },
+    "sol": {
+      "name": "Solana",
+      "type": "pos",
+      "models": [
+        {
+          "type": "carbon",
+          "b0": 2471.9084650492014,
+          "b1": 1.01622378e-11
+        }
+      ]
+    },
+    "avax": {
+      "name": "Avalanche",
+      "type": "pos",
+      "models": [
+        {
+          "b0": 371.1761123742084,
+          "b1": 4.89823124e-10
+        }
+      ]
+    }
+  }
+}
