@@ -1,0 +1,386 @@
+{
+    "data":
+    {
+        "get_execution":
+        {
+            "execution_queued": null,
+            "execution_running": null,
+            "execution_succeeded":
+            {
+                "execution_id": "01HR12D78CYPYBEYJJKJF97TAM",
+                "runtime_seconds": 1226,
+                "generated_at": "2024-03-03T02:51:37.590148Z",
+                "columns":
+                [
+                    "time",
+                    "computeunitsconsumed"
+                ],
+                "data":
+                [
+                    {
+                        "time": "2023-12-09",
+                        "computeunitsconsumed": 6002105042071
+                    },
+                    {
+                        "time": "2024-01-25",
+                        "computeunitsconsumed": 7886949488840
+                    },
+                    {
+                        "time": "2024-01-06",
+                        "computeunitsconsumed": 5615501549265
+                    },
+                    {
+                        "time": "2024-01-14",
+                        "computeunitsconsumed": 5788116525976
+                    },
+                    {
+                        "time": "2024-02-19",
+                        "computeunitsconsumed": 7416900839704
+                    },
+                    {
+                        "time": "2024-02-27",
+                        "computeunitsconsumed": 7760599741637
+                    },
+                    {
+                        "time": "2024-01-24",
+                        "computeunitsconsumed": 7975117828108
+                    },
+                    {
+                        "time": "2023-12-20",
+                        "computeunitsconsumed": 5940679734039
+                    },
+                    {
+                        "time": "2024-02-15",
+                        "computeunitsconsumed": 8045268813399
+                    },
+                    {
+                        "time": "2023-12-02",
+                        "computeunitsconsumed": 3239290874683
+                    },
+                    {
+                        "time": "2024-01-20",
+                        "computeunitsconsumed": 7641024326320
+                    },
+                    {
+                        "time": "2024-01-23",
+                        "computeunitsconsumed": 7470757350704
+                    },
+                    {
+                        "time": "2024-01-05",
+                        "computeunitsconsumed": 5821051538411
+                    },
+                    {
+                        "time": "2024-02-16",
+                        "computeunitsconsumed": 7700611889596
+                    },
+                    {
+                        "time": "2024-01-08",
+                        "computeunitsconsumed": 6011362296457
+                    },
+                    {
+                        "time": "2024-02-22",
+                        "computeunitsconsumed": 7293164495429
+                    },
+                    {
+                        "time": "2024-02-07",
+                        "computeunitsconsumed": 7802193872628
+                    },
+                    {
+                        "time": "2023-12-17",
+                        "computeunitsconsumed": 5921826108737
+                    },
+                    {
+                        "time": "2023-12-30",
+                        "computeunitsconsumed": 5460412357116
+                    },
+                    {
+                        "time": "2024-02-05",
+                        "computeunitsconsumed": 7127624405207
+                    },
+                    {
+                        "time": "2024-01-10",
+                        "computeunitsconsumed": 5841204740531
+                    },
+                    {
+                        "time": "2024-02-10",
+                        "computeunitsconsumed": 7255287432366
+                    },
+                    {
+                        "time": "2024-01-26",
+                        "computeunitsconsumed": 7820052449759
+                    },
+                    {
+                        "time": "2024-01-02",
+                        "computeunitsconsumed": 6189591817044
+                    },
+                    {
+                        "time": "2023-12-04",
+                        "computeunitsconsumed": 4516558731033
+                    },
+                    {
+                        "time": "2024-01-30",
+                        "computeunitsconsumed": 7816722843969
+                    },
+                    {
+                        "time": "2023-12-22",
+                        "computeunitsconsumed": 6275018069095
+                    },
+                    {
+                        "time": "2024-02-24",
+                        "computeunitsconsumed": 6832615016232
+                    },
+                    {
+                        "time": "2024-02-08",
+                        "computeunitsconsumed": 7679393293223
+                    },
+                    {
+                        "time": "2023-12-27",
+                        "computeunitsconsumed": 6100744373056
+                    },
+                    {
+                        "time": "2024-02-04",
+                        "computeunitsconsumed": 7206413535997
+                    },
+                    {
+                        "time": "2024-02-25",
+                        "computeunitsconsumed": 6228899305836
+                    },
+                    {
+                        "time": "2024-02-21",
+                        "computeunitsconsumed": 7491304899983
+                    },
+                    {
+                        "time": "2023-12-31",
+                        "computeunitsconsumed": 5002313639654
+                    },
+                    {
+                        "time": "2024-01-31",
+                        "computeunitsconsumed": 7465329098866
+                    },
+                    {
+                        "time": "2024-02-18",
+                        "computeunitsconsumed": 7403287084451
+                    },
+                    {
+                        "time": "2023-12-08",
+                        "computeunitsconsumed": 6340377709034
+                    },
+                    {
+                        "time": "2023-12-07",
+                        "computeunitsconsumed": 5360671351195
+                    },
+                    {
+                        "time": "2023-12-28",
+                        "computeunitsconsumed": 6000391171167
+                    },
+                    {
+                        "time": "2024-02-20",
+                        "computeunitsconsumed": 7375476098228
+                    },
+                    {
+                        "time": "2024-01-13",
+                        "computeunitsconsumed": 5976861770464
+                    },
+                    {
+                        "time": "2023-12-05",
+                        "computeunitsconsumed": 4494487277661
+                    },
+                    {
+                        "time": "2024-02-14",
+                        "computeunitsconsumed": 7795981671369
+                    },
+                    {
+                        "time": "2023-12-21",
+                        "computeunitsconsumed": 6003502206382
+                    },
+                    {
+                        "time": "2024-02-12",
+                        "computeunitsconsumed": 7433377146979
+                    },
+                    {
+                        "time": "2024-01-01",
+                        "computeunitsconsumed": 5184915446966
+                    },
+                    {
+                        "time": "2023-12-03",
+                        "computeunitsconsumed": 3418108133708
+                    },
+                    {
+                        "time": "2024-02-17",
+                        "computeunitsconsumed": 7276488094413
+                    },
+                    {
+                        "time": "2024-01-03",
+                        "computeunitsconsumed": 5911014790765
+                    },
+                    {
+                        "time": "2024-02-11",
+                        "computeunitsconsumed": 7336913079122
+                    },
+                    {
+                        "time": "2023-12-18",
+                        "computeunitsconsumed": 6057307655568
+                    },
+                    {
+                        "time": "2024-01-19",
+                        "computeunitsconsumed": 7182299845925
+                    },
+                    {
+                        "time": "2024-01-15",
+                        "computeunitsconsumed": 6182047212523
+                    },
+                    {
+                        "time": "2024-01-07",
+                        "computeunitsconsumed": 5665801542763
+                    },
+                    {
+                        "time": "2023-12-10",
+                        "computeunitsconsumed": 5373177644049
+                    },
+                    {
+                        "time": "2024-02-23",
+                        "computeunitsconsumed": 7268144387116
+                    },
+                    {
+                        "time": "2023-12-12",
+                        "computeunitsconsumed": 5791233883583
+                    },
+                    {
+                        "time": "2024-01-28",
+                        "computeunitsconsumed": 7920073451578
+                    },
+                    {
+                        "time": "2023-12-01",
+                        "computeunitsconsumed": 3643846556337
+                    },
+                    {
+                        "time": "2023-12-25",
+                        "computeunitsconsumed": 6278381862802
+                    },
+                    {
+                        "time": "2023-12-16",
+                        "computeunitsconsumed": 6023206085050
+                    },
+                    {
+                        "time": "2023-12-29",
+                        "computeunitsconsumed": 6028401995400
+                    },
+                    {
+                        "time": "2023-12-13",
+                        "computeunitsconsumed": 5914930573025
+                    },
+                    {
+                        "time": "2023-12-26",
+                        "computeunitsconsumed": 6233845954191
+                    },
+                    {
+                        "time": "2024-02-03",
+                        "computeunitsconsumed": 7624511021212
+                    },
+                    {
+                        "time": "2023-12-24",
+                        "computeunitsconsumed": 6362608304051
+                    },
+                    {
+                        "time": "2024-01-21",
+                        "computeunitsconsumed": 7576746568507
+                    },
+                    {
+                        "time": "2024-02-26",
+                        "computeunitsconsumed": 7432478818358
+                    },
+                    {
+                        "time": "2024-01-27",
+                        "computeunitsconsumed": 8145544398230
+                    },
+                    {
+                        "time": "2024-01-12",
+                        "computeunitsconsumed": 5604473656193
+                    },
+                    {
+                        "time": "2024-01-16",
+                        "computeunitsconsumed": 6277799994627
+                    },
+                    {
+                        "time": "2024-02-13",
+                        "computeunitsconsumed": 7674696629713
+                    },
+                    {
+                        "time": "2023-12-15",
+                        "computeunitsconsumed": 6486907656926
+                    },
+                    {
+                        "time": "2023-12-23",
+                        "computeunitsconsumed": 6077216373168
+                    },
+                    {
+                        "time": "2023-11-30",
+                        "computeunitsconsumed": 3727292219396
+                    },
+                    {
+                        "time": "2024-02-02",
+                        "computeunitsconsumed": 7488602147491
+                    },
+                    {
+                        "time": "2024-01-29",
+                        "computeunitsconsumed": 7875599370618
+                    },
+                    {
+                        "time": "2023-12-11",
+                        "computeunitsconsumed": 5999320338204
+                    },
+                    {
+                        "time": "2024-01-04",
+                        "computeunitsconsumed": 5988200132542
+                    },
+                    {
+                        "time": "2024-01-17",
+                        "computeunitsconsumed": 6597247704223
+                    },
+                    {
+                        "time": "2024-02-01",
+                        "computeunitsconsumed": 7275973602690
+                    },
+                    {
+                        "time": "2024-01-11",
+                        "computeunitsconsumed": 5895801404648
+                    },
+                    {
+                        "time": "2023-12-19",
+                        "computeunitsconsumed": 6169807681263
+                    },
+                    {
+                        "time": "2024-02-06",
+                        "computeunitsconsumed": 5478435805540
+                    },
+                    {
+                        "time": "2024-01-22",
+                        "computeunitsconsumed": 7410491767222
+                    },
+                    {
+                        "time": "2024-02-09",
+                        "computeunitsconsumed": 7803666700924
+                    },
+                    {
+                        "time": "2024-01-18",
+                        "computeunitsconsumed": 7099515846850
+                    },
+                    {
+                        "time": "2024-01-09",
+                        "computeunitsconsumed": 6031309343688
+                    },
+                    {
+                        "time": "2023-12-14",
+                        "computeunitsconsumed": 6082584601581
+                    },
+                    {
+                        "time": "2023-12-06",
+                        "computeunitsconsumed": 5400490365744
+                    }
+                ],
+                "request_max_result_size_bytes": 268435456
+            },
+            "execution_failed": null
+        }
+    }
+}

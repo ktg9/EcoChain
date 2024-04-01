@@ -1,0 +1,47 @@
+Proof of Stake:
+
+  Ethereum:
+    Tnxs: https://etherscan.io/chart/tx
+    Gas: https://etherscan.io/chart/gasused
+    Gas estimate: infura
+
+  Solana:
+    Gas estimate:
+    Gas total: https://dune.com/queries/3197144
+    Tnxs: Dune
+
+
+  Avalanche_c:
+    Gas total: dune
+    Transactions: dune
+
+
+Proof of Work:
+  BTC:
+    Hash-rate chart: https://bitinfocharts.com/comparison/bitcoin-hashrate.html
+    Hash-rate: https://bitinfocharts.com/bitcoin/
+    Transactions: https://bitinfocharts.com/bitcoin/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

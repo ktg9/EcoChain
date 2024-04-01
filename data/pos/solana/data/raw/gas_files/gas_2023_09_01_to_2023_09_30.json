@@ -1,0 +1,146 @@
+{
+  "data":
+  {
+    "get_execution":
+    {
+      "execution_queued": null,
+      "execution_running": null,
+      "execution_succeeded":
+      {
+        "execution_id": "01HQYRDJM067FACWC0VZJ6T2FP",
+        "runtime_seconds": 1314,
+        "generated_at": "2024-03-02T05:20:01.285232Z",
+        "columns":
+        [
+          "time",
+          "computeunitsconsumed"
+        ],
+        "data":
+        [
+          {
+            "time": "2023-09-23",
+            "computeunitsconsumed": 1478840453187
+          },
+          {
+            "time": "2023-09-20",
+            "computeunitsconsumed": 2102563444004
+          },
+          {
+            "time": "2023-09-06",
+            "computeunitsconsumed": 2025296291863
+          },
+          {
+            "time": "2023-09-30",
+            "computeunitsconsumed": 1868236920644
+          },
+          {
+            "time": "2023-09-16",
+            "computeunitsconsumed": 1779699354831
+          },
+          {
+            "time": "2023-09-10",
+            "computeunitsconsumed": 2331737718105
+          },
+          {
+            "time": "2023-09-08",
+            "computeunitsconsumed": 1870011189502
+          },
+          {
+            "time": "2023-09-12",
+            "computeunitsconsumed": 2313632181097
+          },
+          {
+            "time": "2023-09-28",
+            "computeunitsconsumed": 1796760289755
+          },
+          {
+            "time": "2023-09-01",
+            "computeunitsconsumed": 1997867696429
+          },
+          {
+            "time": "2023-09-13",
+            "computeunitsconsumed": 2352467417915
+          },
+          {
+            "time": "2023-09-02",
+            "computeunitsconsumed": 1726059903890
+          },
+          {
+            "time": "2023-09-24",
+            "computeunitsconsumed": 1586675727585
+          },
+          {
+            "time": "2023-09-03",
+            "computeunitsconsumed": 1688023802515
+          },
+          {
+            "time": "2023-09-18",
+            "computeunitsconsumed": 2184171399183
+          },
+          {
+            "time": "2023-09-26",
+            "computeunitsconsumed": 1615118835720
+          },
+          {
+            "time": "2023-09-22",
+            "computeunitsconsumed": 1662672449258
+          },
+          {
+            "time": "2023-09-27",
+            "computeunitsconsumed": 1778283110656
+          },
+          {
+            "time": "2023-09-19",
+            "computeunitsconsumed": 2043394155437
+          },
+          {
+            "time": "2023-09-15",
+            "computeunitsconsumed": 1927909097527
+          },
+          {
+            "time": "2023-09-14",
+            "computeunitsconsumed": 2122177702159
+          },
+          {
+            "time": "2023-09-09",
+            "computeunitsconsumed": 1673048792131
+          },
+          {
+            "time": "2023-09-07",
+            "computeunitsconsumed": 2312564724996
+          },
+          {
+            "time": "2023-09-29",
+            "computeunitsconsumed": 1912152817277
+          },
+          {
+            "time": "2023-09-05",
+            "computeunitsconsumed": 2137477842685
+          },
+          {
+            "time": "2023-09-11",
+            "computeunitsconsumed": 2496361993436
+          },
+          {
+            "time": "2023-09-21",
+            "computeunitsconsumed": 2027477520334
+          },
+          {
+            "time": "2023-09-17",
+            "computeunitsconsumed": 1753082958191
+          },
+          {
+            "time": "2023-09-04",
+            "computeunitsconsumed": 1920823888040
+          },
+          {
+            "time": "2023-09-25",
+            "computeunitsconsumed": 1708794015361
+          }
+        ],
+        "request_max_result_size_bytes": 268435456
+      },
+      "execution_failed": null
+    }
+  }
+}

@@ -1,91 +1,80 @@
-# if-plugin-template
+# Green Software Foundation Carbon Hack 2024
+Project name: EcoChain - Sustainable Blockchain Environmental Impacts Measurement<br>
+Author: ktg9 (Ky Tran)
 
-`if-plugin-template` is an environmental impact calculator template which exposes an API for [IF](https://github.com/Green-Software-Foundation/if) to retrieve energy and embodied carbon estimates.
 
-## Implementation
+## Introduction
 
-Here can be implementation details of the plugin. For example which API is used, transformations and etc.
+### Blockchain energy consumption problem
+Blockchain is one of the fastest growing field these days. Since the creation of Bitcoin
+in 2008, the market value has grown to an estimation of 1.09 trillion $ as of August 2023 according
+to CoinMarketCap.<br>
+The blockchain sector has grown from only a single cryptocurrency (bitcoin) to a vast ecosystem that includes
+hundreds of blockchain networks, Defi, smart contract,... fueling the creation of big names like Binance, Uniswap,...<br>
+However, along with the development, blockchain also have dark sides and one of it is large
+energy consumption.
+Bitcoin alone is estimated to consume 127 terawatt-hours (TWh) a year — more than many countries, including Norway.
+In the United States, cryptocurrency activity is estimated to emit from 25 to 50 million tons of CO2 each year, on par with the annual emissions from diesel fuel used by US railroads.
 
-## Usage
 
-To run the `<YOUR-CUSTOM-PLUGIN>`, an instance of `PluginInterface` must be created. Then, the plugin's `execute()` method can be called, passing required arguments to it.
+### Effort to estimate the energy consumption of blockchains
 
-This is how you could run the model in Typescript:
+Although just in initial state, there have been various methodologies/estimations
+aimed at measuring energy consumption of blockchain systems. <br>
+The [Crypto Carbon Ratings Institute](https://indices.carbon-ratings.com/?)
+has conducted several researches and produced statistics that are widely used in reports.
+The [Cambridge Bitcoin Electricity Consumption Index](https://ccaf.io/cbnsi/cbeci) is another excellent
+source.
 
-```typescript
-async function runPlugin() {
-  const newModel = await new MyCustomPlugin().configure(params);
-  const usage = await newModel.calculate([
-    {
-      timestamp: '2021-01-01T00:00:00Z',
-      duration: '15s',
-      'cpu-util': 34,
-    },
-    {
-      timestamp: '2021-01-01T00:00:15Z',
-      duration: '15s',
-      'cpu-util': 12,
-    },
-  ]);
+### Goal of this plugin
+As stated, there are many good estimation done by numerous organization with solid research
+background about blockchain energy consumption. However, the majority of estimations
+are about showing how much energy the entire blockchain network consume. While this is excellent in showing blockchain users the overral environmental impact of
+blockchains, those numbers dont show blockchain users the impact of their actions (in participating in crypto market) on the environment. <br>
 
-  console.log(usage);
-}
+Blockchain users includes cryptocurrency investors, smart contract developers, financial organizations using blockchain
+as their technology and many more. <br>
 
-runPlugin();
-```
+This GSF plugin aims at showing the normal users (investors, developers,...) the impact of their actions on environment
+while interacting with blockchain ecosystems. Specifically, this plugin will try to answer these questions to blockchain users:
+- I am a cryptocurrency user, how much energy is spent when I transfer some bitcoin
+  to another wallet?
+- I am a smart contract developer, how much energy my smart contract will cost when it's
+  deployed in different blockchains like Ethereum, Solana, Avalanche...?
+- How much energy USDC cost?
 
-## Testing model integration
+I believe a quantification of how much energy associated with users actions will be impactful
+and better educate users about blockchain environmental issue as a whole. And that's this plugin
+is about, to show the majority of blockchains users their actions' impact by calculating how much energy
+their transaction will consume.
 
-### Using local links
 
-For using locally developed model in `IF Framework` please follow these steps: 
 
-1. On the root level of a locally developed model run `npm link`, which will create global package. It uses `package.json` file's `name` field as a package name. Additionally name can be checked by running `npm ls -g --depth=0 --link=true`.
-2. Use the linked model in impl by specifying `name`, `method`, `path` in initialize models section. 
 
-```yaml
-name: plugin-demo-link
-description: loads plugin
-tags: null
-initialize:
-  plugins:
-    my-custom-plugin:
-      method: MyCustomPlugin
-      path: "<name-field-from-package.json>"
-      global-config:
-        ...
-...
-```
 
-### Using directly from Github
 
-You can simply push your model to the public Github repository and pass the path to it in your impl.
-For example, for a model saved in `github.com/my-repo/my-model` you can do the following:
 
-npm install your model: 
 
-```
-npm install -g https://github.com/my-repo/my-model
-```
 
-Then, in your `impl`, provide the path in the model instantiation. You also need to specify which class the model instantiates. In this case you are using the `PluginInterface`, so you can specify `OutputModel`. 
 
-```yaml
-name: plugin-demo-git
-description: loads plugin
-tags: null
-initialize:
-  plugins:
-    my-custom-plugin:
-      method: MyCustomPlugin
-      path: https://github.com/my-repo/my-model
-      global-config:
-        ...
-...
-```
 
-Now, when you run the `manifest` using the IF CLI, it will load the model automatically. Run using:
 
-```sh
-ie --manifest <path-to-your-impl> --output <path-to-save-output>
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

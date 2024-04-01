@@ -1,0 +1,5 @@
+
+Ethereum: gas
+Solana: compute unit
+Algorand: No concept of gas
+Avalanche: gas like ethereum
