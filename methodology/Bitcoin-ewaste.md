@@ -1,4 +1,4 @@
-# Methodology for calculating Bitcoin electronic waste
+# Methodology for calculating Bitcoin transaction electronic waste
 
 ### Overview
 Global waste is expected to grow by 70% by 2050 from 2016. 
