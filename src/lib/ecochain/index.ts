@@ -1,4 +1,4 @@
-import {PluginInterface, PluginParams} from './types';
+import {PluginParams} from './types';
 import * as fs from 'fs';
 import * as path from 'path';
 import {z} from 'zod';
@@ -26,7 +26,12 @@ export const ERRORS = {
 };
 
 type YourGlobalConfig = Record<string, any>;
-export const EcoChain = (globalConfig: YourGlobalConfig): PluginInterface => {
+export const EcoChain = (
+  globalConfig: YourGlobalConfig
+): {
+  metadata: {kind: string};
+  execute: (inputs: PluginParams[]) => PluginParams[];
+} => {
   const metadata = {
     kind: 'execute',
   };
