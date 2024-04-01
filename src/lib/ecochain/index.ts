@@ -46,7 +46,7 @@ export const EcoChain = (
   const loadMetadata = (metadataFilePath: string): any => {
     try {
       const fileData = fs.readFileSync(
-        path.resolve(__dirname, 'config', metadataFilePath),
+        path.resolve('config', metadataFilePath),
         'utf-8'
       );
       return JSON.parse(fileData);
@@ -56,7 +56,7 @@ export const EcoChain = (
     }
   };
   const blockchainConfig = loadMetadata('ecochain_metadata.json');
-  const bitoinMiningShares = loadMetadata('bitcoin_mining_shares.json');
+  const bitcoinMiningShares = loadMetadata('bitcoin_mining_shares.json');
   const electricityWaterIntensity = loadMetadata(
     'electricity_water_intensity.json'
   );
@@ -190,11 +190,11 @@ export const EcoChain = (
     // Get mining shares data
     let miningSharesData: any;
     if (bitcoinMiningSharesFile === undefined) {
-      miningSharesData = bitoinMiningShares;
+      miningSharesData = bitcoinMiningShares;
     } else {
       try {
         const fileData = fs.readFileSync(
-          path.resolve(__dirname, bitcoinMiningSharesFile),
+          path.resolve(bitcoinMiningSharesFile),
           'utf-8'
         );
         miningSharesData = JSON.parse(fileData);
