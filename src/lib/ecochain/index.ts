@@ -26,9 +26,7 @@ export const ERRORS = {
 };
 
 type YourGlobalConfig = Record<string, any>;
-export const EcoChainDev = (
-  globalConfig: YourGlobalConfig
-): PluginInterface => {
+export const EcoChain = (globalConfig: YourGlobalConfig): PluginInterface => {
   const metadata = {
     kind: 'execute',
   };
