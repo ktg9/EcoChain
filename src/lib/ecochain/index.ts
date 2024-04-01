@@ -46,7 +46,7 @@ export const EcoChain = (
   const loadMetadata = (metadataFilePath: string): any => {
     try {
       const fileData = fs.readFileSync(
-        path.resolve('config', metadataFilePath),
+        path.resolve(__dirname, '..', '..', '..', 'config', metadataFilePath),
         'utf-8'
       );
       return JSON.parse(fileData);
