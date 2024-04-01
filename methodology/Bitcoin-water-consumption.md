@@ -61,13 +61,17 @@ Note that in here we also assume the distribution of hashrate is the distributio
 - [CCAF](https://ccaf.io/cbnsi/cbeci/mining_map) has a mining shares map we can reference
 
 4. Calculate water consumption per bitcoin Transaction
-- First get the total bitcoin water consumption = direct water consumption + indirect water consumption
-- Then a regression model is built to find relationship between hashrate
-and water consumption, if a strong correlation found, we can use the model
-to calculate water consumption based on future hashrate.
+- First a regression model is built to find relationship between hashrate
+  and power demand, if a strong correlation found, we can use the model
+  to calculate power demand based on future hashrate.
+- Then get the total bitcoin water consumption = direct water consumption + indirect water consumption. In that:
+  + direct water consumption = 1.8 * power demand
+  + indirect water consumption = sum(country_water_intensity * country_share * power_demand)
 - Water consumption per Bitcoin transaction can then be calculated as (total water consumption)/(total transactions)
+- File data/pow/bitcoin/Bitcoin-power-demand.md explains how to calculate linear regression model.
 
-
-### Link
+### Reference
 
 1. https://www.sciencedirect.com/science/article/pii/S2949790623000046
+2. https://v2.api.carbon-ratings.com/documentation
+3. https://ccaf.io/cbnsi/cbeci/mining_map
