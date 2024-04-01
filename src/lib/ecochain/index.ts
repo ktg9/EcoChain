@@ -45,7 +45,7 @@ export const EcoChain = (
   const supportedBlockchains = blockchainConfig['supported_blockchains'];
 
   /**
-   * Execute's strategy description here.
+   * Calculate pow or pos environmental impacts
    */
   const execute = (inputs: PluginParams[]): PluginParams[] => {
     validateGlobalConfig(globalConfig, supportedBlockchains);

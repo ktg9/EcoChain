@@ -4,6 +4,15 @@ import * as fs from 'fs';
 import * as path from 'path';
 import {ERRORS} from './error';
 
+/**
+ * Calculate Proof-of-work blockchain environmental impacts
+ * @param inputs -> received from yml file
+ * @param models -> models list, models include parameters for calculation. E.g, if it's linear regression, models include
+ * b0 and b1
+ * @param defaultBitcoinMiningShares -> default bitcoin mining shares for each country
+ * @param electricityWaterIntensity -> electricity water intensity in L/kWH for each country
+ * @return PluginParams
+ */
 export const powCalculation = (
   inputs: PluginParams[],
   models: [any],
@@ -42,6 +51,17 @@ export const powCalculation = (
   });
 };
 
+/**
+ * @param b0 -> linear regression model b0
+ * @param b1 -> linear regression model b1
+ * @param hashRate -> current hash rate
+ * @param totalTransactions -> total transactions last 24h
+ * @param bitcoinMiningSharesFile -> path to bitcoin mining shares file, if undefined, the default
+ * bitcoin mining shares will be used instead.
+ * @param defaultBitcoinMiningShares -> default bitcoin mining shares for each country
+ * @param electricityWaterIntensity -> electricity water intensity in L/kWH for each country
+ * @return water consumption for each bitcoin transaction in litre (L)
+ */
 const calculateWaterConsumption = (
   b0: number,
   b1: number,

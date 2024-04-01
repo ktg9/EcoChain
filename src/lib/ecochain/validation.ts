@@ -2,6 +2,11 @@ import {ERRORS} from './error';
 import {z} from 'zod';
 import {EcoChainGlobalConfig, PluginParams} from './types';
 
+/**
+ * Validate global config
+ * @param globalConfig
+ * @param supportedBlockchains -> list of supported blockchain (btc,solana,...)
+ */
 export const validateGlobalConfig = (
   globalConfig: EcoChainGlobalConfig,
   supportedBlockchains: any
@@ -25,6 +30,12 @@ export const validateGlobalConfig = (
   }
 };
 
+/**
+ * Validate inputs
+ * @param input
+ * @param index
+ * @param blockchainType -> pow or pos
+ */
 export const validateInput = (
   input: PluginParams,
   index: number,
