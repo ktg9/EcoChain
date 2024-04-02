@@ -1,5 +1,14 @@
 {
-  "supported_blockchains": ["btc", "bch", "bsv", "dash", "doge", "ltc", "sol", "avax"],
+  "supported_blockchains": [
+    "btc",
+    "bch",
+    "bsv",
+    "dash",
+    "doge",
+    "ltc",
+    "sol",
+    "avax"
+  ],
   "blockchain_config": {
     "btc": {
       "type": "pow",
@@ -14,12 +23,12 @@
           "type": "ewaste",
           "b0": 9302292.008423146,
           "b1": 4.42885761e-14
-        }, {
+        },
+        {
           "type": "fresh_water",
           "b0": 90595506.70413834,
           "b1": 6.35545318e-13
         }
-
       ]
     },
     "bch": {

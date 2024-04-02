@@ -5,6 +5,7 @@ import {validateGlobalConfig} from './validation';
 import {powCalculation} from './pow';
 import {posCalculation} from './pos';
 import {loadMetadata} from './helper';
+import * as path from 'path';
 
 export const EcoChain = (
   globalConfig: EcoChainGlobalConfig
@@ -24,10 +25,35 @@ export const EcoChain = (
    * - electricityWaterIntensity: electricity water intensity by countries in L/kWh
    * - supportedBlockchains: supported blockchains, used to validate user input
    */
-  const blockchainConfig = loadMetadata('ecochain_metadata.json');
-  const defaultBitcoinMiningShares = loadMetadata('bitcoin_mining_shares.json');
+  const blockchainConfig = loadMetadata(
+    path.resolve(
+      __dirname,
+      '..',
+      '..',
+      '..',
+      'config',
+      'ecochain_metadata.json'
+    )
+  );
+  const defaultBitcoinMiningShares = loadMetadata(
+    path.resolve(
+      __dirname,
+      '..',
+      '..',
+      '..',
+      'config',
+      'bitcoin_mining_shares.json'
+    )
+  );
   const electricityWaterIntensity = loadMetadata(
-    'electricity_water_intensity.json'
+    path.resolve(
+      __dirname,
+      '..',
+      '..',
+      '..',
+      'config',
+      'electricity_water_intensity.json'
+    )
   );
   const supportedBlockchains = blockchainConfig['supported_blockchains'];
 

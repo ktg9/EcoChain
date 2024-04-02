@@ -10,7 +10,7 @@ import {validateInput} from './validation';
  */
 export const posCalculation = (
   inputs: PluginParams[],
-  models: [any]
+  models: any[]
 ): PluginParams[] => {
   return inputs.map((input, index) => {
     validateInput(input, index, 'pos');

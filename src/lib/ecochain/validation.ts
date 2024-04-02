@@ -8,7 +8,7 @@ import {EcoChainGlobalConfig, PluginParams} from './types';
  * @param supportedBlockchains -> list of supported blockchain (btc,solana,...)
  */
 export const validateGlobalConfig = (
-  globalConfig: EcoChainGlobalConfig,
+  globalConfig: EcoChainGlobalConfig | any,
   supportedBlockchains: any
 ) => {
   if (globalConfig === undefined) {

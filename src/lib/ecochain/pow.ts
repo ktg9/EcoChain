@@ -9,14 +9,14 @@ import {ERRORS} from './error';
  * @param inputs -> received from yml file
  * @param models -> models list, models include parameters for calculation. E.g, if it's linear regression, models include
  * b0 and b1
- * @param defaultBitcoinMiningShares -> default bitcoin mining shares for each country
+ * @param defaulMiningShares -> default mining shares for each country
  * @param electricityWaterIntensity -> electricity water intensity in L/kWH for each country
  * @return PluginParams
  */
 export const powCalculation = (
   inputs: PluginParams[],
-  models: [any],
-  defaultBitcoinMiningShares: any,
+  models: any[],
+  defaulMiningShares: any,
   electricityWaterIntensity: any
 ): PluginParams[] => {
   return inputs.map((input, index) => {
@@ -24,20 +24,20 @@ export const powCalculation = (
     // Calculate Proof-of-Work footprints
     const hashRate = input['hash_rate'];
     const totalTransactions = input['total_transactions'];
-    const bitcoinMiningSharesFile = input['bitcoin_mining_shares_file'];
+    const miningSharesFile = input['mining_shares_file'];
     const output: any = {};
     models.map(model => {
       const type = model['type'];
       const b0 = model['b0'];
       const b1 = model['b1'];
       if (type === 'fresh_water') {
-        output[type] = calculateWaterConsumption(
+        output[type] = powWaterConsumption(
           b0,
           b1,
           hashRate,
           totalTransactions,
-          bitcoinMiningSharesFile,
-          defaultBitcoinMiningShares,
+          miningSharesFile,
+          defaulMiningShares,
           electricityWaterIntensity
         );
       } else {
@@ -56,42 +56,36 @@ export const powCalculation = (
  * @param b1 -> linear regression model b1
  * @param hashRate -> current hash rate
  * @param totalTransactions -> total transactions last 24h
- * @param bitcoinMiningSharesFile -> path to bitcoin mining shares file, if undefined, the default
- * bitcoin mining shares will be used instead.
- * @param defaultBitcoinMiningShares -> default bitcoin mining shares for each country
+ * @param miningSharesFile -> path to mining shares file, if undefined, the default
+ * mining shares will be used instead.
+ * @param defaultMiningShares -> default mining shares for each country
  * @param electricityWaterIntensity -> electricity water intensity in L/kWH for each country
- * @return water consumption for each bitcoin transaction in litre (L)
+ * @return water consumption for each transaction in litre (L)
  */
-const calculateWaterConsumption = (
+export const powWaterConsumption = (
   b0: number,
   b1: number,
   hashRate: number,
   totalTransactions: number,
-  bitcoinMiningSharesFile: string,
-  defaultBitcoinMiningShares: any,
+  miningSharesFile: string,
+  defaultMiningShares: any,
   electricityWaterIntensity: any
 ): number => {
-  const powerDemand = b0 + b1 * hashRate;
-  const directWaterConsumption = powerDemand * 1.8;
-
   // Get mining shares data
   let miningSharesData: any;
-  if (bitcoinMiningSharesFile === undefined) {
-    miningSharesData = defaultBitcoinMiningShares;
+  if (miningSharesFile === undefined) {
+    miningSharesData = defaultMiningShares;
   } else {
     try {
-      const fileData = fs.readFileSync(
-        path.resolve(bitcoinMiningSharesFile),
-        'utf-8'
-      );
+      const fileData = fs.readFileSync(path.resolve(miningSharesFile), 'utf-8');
       miningSharesData = JSON.parse(fileData);
     } catch (error) {
       console.log(error);
-      throw new Error(
-        ERRORS.INVALID_MINING_SHARES_FILE(bitcoinMiningSharesFile)
-      );
+      throw new Error(ERRORS.INVALID_MINING_SHARES_FILE(miningSharesFile));
     }
   }
+  const powerDemand = b0 + b1 * hashRate;
+  const directWaterConsumption = powerDemand * 1.8;
   let indirectWaterConsumption = 0;
   Object.keys(miningSharesData).forEach(key => {
     const miningShare = miningSharesData[key];
