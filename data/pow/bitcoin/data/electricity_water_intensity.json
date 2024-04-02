@@ -1,569 +1,711 @@
 {
-  "Albania": {
+  "AL": {
+    "name": "Albania",
     "electricity_water_intensity": 5.7659548,
     "unit": "litre/kWh"
   },
-  "Algeria": {
+  "DZ": {
+    "name": "Algeria",
     "electricity_water_intensity": 2.428618259,
     "unit": "litre/kWh"
   },
-  "Angola": {
+  "AO": {
+    "name": "Angola",
     "electricity_water_intensity": 15.9785096,
     "unit": "litre/kWh"
   },
-  "Argentina": {
+  "AR": {
+    "name": "Argentina",
     "electricity_water_intensity": 16.71302048,
     "unit": "litre/kWh"
   },
-  "Armenia": {
+  "AM": {
+    "name": "Armenia",
     "electricity_water_intensity": 17.24620827,
     "unit": "litre/kWh"
   },
-  "Australia": {
+  "AU": {
+    "name": "Australia",
     "electricity_water_intensity": 4.869093317,
     "unit": "litre/kWh"
   },
-  "Austria": {
+  "AT": {
+    "name": "Austria",
     "electricity_water_intensity": 7.196315577,
     "unit": "litre/kWh"
   },
-  "Azerbaijan": {
+  "AZ": {
+    "name": "Azerbaijan",
     "electricity_water_intensity": 8.880043376,
     "unit": "litre/kWh"
   },
-  "Bahrain": {
+  "BH": {
+    "name": "Bahrain",
     "electricity_water_intensity": 1.822106302,
     "unit": "litre/kWh"
   },
-  "Bangladesh": {
+  "BD": {
+    "name": "Bangladesh",
     "electricity_water_intensity": 10.32248525,
     "unit": "litre/kWh"
   },
-  "Belarus": {
+  "BY": {
+    "name": "Belarus",
     "electricity_water_intensity": 3.724589189,
     "unit": "litre/kWh"
   },
-  "Belgium": {
+  "BE": {
+    "name": "Belgium",
     "electricity_water_intensity": 1.358719991,
     "unit": "litre/kWh"
   },
-  "Benin": {
+  "BJ": {
+    "name": "Benin",
     "electricity_water_intensity": 1.942076191,
     "unit": "litre/kWh"
   },
-  "Bhutan": {
+  "BT": {
+    "name": "Bhutan",
     "electricity_water_intensity": 65.85547697,
     "unit": "litre/kWh"
   },
-  "Bolivia": {
+  "BO": {
+    "name": "Bolivia",
     "electricity_water_intensity": 19.93866328,
     "unit": "litre/kWh"
   },
-  "Bosnia Herzegovina": {
+  "BA": {
+    "name": "Bosnia Herzegovina",
     "electricity_water_intensity": 2.741942109,
     "unit": "litre/kWh"
   },
-  "Botswana": {
+  "BW": {
+    "name": "Botswana",
     "electricity_water_intensity": 1.39276186,
     "unit": "litre/kWh"
   },
-  "Brazil": {
+  "BR": {
+    "name": "Brazil",
     "electricity_water_intensity": 44.46357313,
     "unit": "litre/kWh"
   },
-  "Brunei": {
+  "BN": {
+    "name": "Brunei",
     "electricity_water_intensity": 1.822103511,
     "unit": "litre/kWh"
   },
-  "Bulgaria": {
+  "BG": {
+    "name": "Bulgaria",
     "electricity_water_intensity": 17.47218819,
     "unit": "litre/kWh"
   },
-  "Cote d'Ivoire": {
+  "CI": {
+    "name": "Cote d'Ivoire",
     "electricity_water_intensity": 391.6798207,
     "unit": "litre/kWh"
   },
-  "Cambodia": {
+  "KH": {
+    "name": "Cambodia",
     "electricity_water_intensity": 30.7800658,
     "unit": "litre/kWh"
   },
-  "Cameroon": {
+  "CM": {
+    "name": "Cameroon",
     "electricity_water_intensity": 392.1052222,
     "unit": "litre/kWh"
   },
-  "Canada": {
+  "CA": {
+    "name": "Canada",
     "electricity_water_intensity": 15.47528148,
     "unit": "litre/kWh"
   },
-  "Chile": {
+  "CL": {
+    "name": "Chile",
     "electricity_water_intensity": 1.991037458,
     "unit": "litre/kWh"
   },
-  "China": {
+  "CN": {
+    "name": "China",
     "electricity_water_intensity": 1.675160972,
     "unit": "litre/kWh"
   },
-  "Colombia": {
+  "CO": {
+    "name": "Colombia",
     "electricity_water_intensity": 4.531300202,
     "unit": "litre/kWh"
   },
-  "Costa Rica": {
+  "CR": {
+    "name": "Costa Rica",
     "electricity_water_intensity": 43.8161083,
     "unit": "litre/kWh"
   },
-  "Croatia": {
+  "HR": {
+    "name": "Croatia",
     "electricity_water_intensity": 2.451280362,
     "unit": "litre/kWh"
   },
-  "Cuba": {
+  "CU": {
+    "name": "Cuba",
     "electricity_water_intensity": 1.988209162,
     "unit": "litre/kWh"
   },
-  "Cyprus": {
+  "CY": {
+    "name": "Cyprus",
     "electricity_water_intensity": 1.695638983,
     "unit": "litre/kWh"
   },
-  "Czech Republic": {
+  "CZ": {
+    "name": "Czech Republic",
     "electricity_water_intensity": 9.412464896,
     "unit": "litre/kWh"
   },
-  "Dem. People's Rep. of Korea": {
+  "KP": {
+    "name": "Dem. People's Rep. of Korea",
     "electricity_water_intensity": 55.63845292,
     "unit": "litre/kWh"
   },
-  "Denmark": {
+  "DK": {
+    "name": "Denmark",
     "electricity_water_intensity": 0.5448631063,
     "unit": "litre/kWh"
   },
-  "Dominican Republic": {
+  "DO": {
+    "name": "Dominican Republic",
     "electricity_water_intensity": 2.105530755,
     "unit": "litre/kWh"
   },
-  "Ecuador": {
+  "EC": {
+    "name": "Ecuador",
     "electricity_water_intensity": 47.66880948,
     "unit": "litre/kWh"
   },
-  "Egypt": {
+  "EG": {
+    "name": "Egypt",
     "electricity_water_intensity": 41.2223033,
     "unit": "litre/kWh"
   },
-  "El Salvador": {
+  "SV": {
+    "name": "El Salvador",
     "electricity_water_intensity": 10.38585438,
     "unit": "litre/kWh"
   },
-  "Eritrea": {
+  "ER": {
+    "name": "Eritrea",
     "electricity_water_intensity": 1.793380792,
     "unit": "litre/kWh"
   },
-  "Estonia": {
+  "EE": {
+    "name": "Estonia",
     "electricity_water_intensity": 1.247107348,
     "unit": "litre/kWh"
   },
-  "Ethiopia": {
+  "ET": {
+    "name": "Ethiopia",
     "electricity_water_intensity": 38.13669666,
     "unit": "litre/kWh"
   },
-  "Finland": {
+  "FI": {
+    "name": "Finland",
     "electricity_water_intensity": 17.80098349,
     "unit": "litre/kWh"
   },
-  "France": {
+  "FR": {
+    "name": "France",
     "electricity_water_intensity": 2.460735847,
     "unit": "litre/kWh"
   },
-  "Gabon": {
+  "GA": {
+    "name": "Gabon",
     "electricity_water_intensity": 292.9461347,
     "unit": "litre/kWh"
   },
-  "Georgia": {
+  "GE": {
+    "name": "Georgia",
     "electricity_water_intensity": 49.14711251,
     "unit": "litre/kWh"
   },
-  "Germany": {
+  "DE": {
+    "name": "Germany",
     "electricity_water_intensity": 1.494519963,
     "unit": "litre/kWh"
   },
-  "Ghana": {
+  "GH": {
+    "name": "Ghana",
     "electricity_water_intensity": 552.3000967,
     "unit": "litre/kWh"
   },
-  "Gibraltar": {
+  "GI": {
+    "name": "Gibraltar",
     "electricity_water_intensity": 1.822266469,
     "unit": "litre/kWh"
   },
-  "Greece": {
+  "GR": {
+    "name": "Greece",
     "electricity_water_intensity": 2.075546831,
     "unit": "litre/kWh"
   },
-  "Guatemala": {
+  "GT": {
+    "name": "Guatemala",
     "electricity_water_intensity": 24.15754218,
     "unit": "litre/kWh"
   },
-  "Haiti": {
+  "HT": {
+    "name": "Haiti",
     "electricity_water_intensity": 10.05844858,
     "unit": "litre/kWh"
   },
-  "Honduras": {
+  "HN": {
+    "name": "Honduras",
     "electricity_water_intensity": 24.45526127,
     "unit": "litre/kWh"
   },
-  "Hungary": {
+  "HU": {
+    "name": "Hungary",
     "electricity_water_intensity": 2.745685065,
     "unit": "litre/kWh"
   },
-  "Iceland": {
+  "IS": {
+    "name": "Iceland",
     "electricity_water_intensity": 2.163846818,
     "unit": "litre/kWh"
   },
-  "India": {
+  "IN": {
+    "name": "India",
     "electricity_water_intensity": 4.174606448,
     "unit": "litre/kWh"
   },
-  "Indonesia": {
+  "ID": {
+    "name": "Indonesia",
     "electricity_water_intensity": 1.67035692,
     "unit": "litre/kWh"
   },
-  "Iran": {
+  "IR": {
+    "name": "Iran",
     "electricity_water_intensity": 2.010000626,
     "unit": "litre/kWh"
   },
-  "Iraq": {
+  "IQ": {
+    "name": "Iraq",
     "electricity_water_intensity": 3.313941111,
     "unit": "litre/kWh"
   },
-  "Ireland": {
+  "IE": {
+    "name": "Ireland",
     "electricity_water_intensity": 1.512062756,
     "unit": "litre/kWh"
   },
-  "Israel": {
+  "IL": {
+    "name": "Israel",
     "electricity_water_intensity": 1.619459294,
     "unit": "litre/kWh"
   },
-  "Italy": {
+  "IT": {
+    "name": "Italy",
     "electricity_water_intensity": 2.140389732,
     "unit": "litre/kWh"
   },
-  "Jamaica": {
+  "JM": {
+    "name": "Jamaica",
     "electricity_water_intensity": 4.058800313,
     "unit": "litre/kWh"
   },
-  "Japan": {
+  "JP": {
+    "name": "Japan",
     "electricity_water_intensity": 8.038947429,
     "unit": "litre/kWh"
   },
-  "Jordan": {
+  "JO": {
+    "name": "Jordan",
     "electricity_water_intensity": 1.797622105,
     "unit": "litre/kWh"
   },
-  "Kazakhstan": {
+  "KZ": {
+    "name": "Kazakhstan",
     "electricity_water_intensity": 82.0471208,
     "unit": "litre/kWh"
   },
-  "Kenya": {
+  "KE": {
+    "name": "Kenya",
     "electricity_water_intensity": 6.049682751,
     "unit": "litre/kWh"
   },
-  "Kuwait": {
+  "KW": {
+    "name": "Kuwait",
     "electricity_water_intensity": 1.821206537,
     "unit": "litre/kWh"
   },
-  "Kyrgyzstan": {
+  "KG": {
+    "name": "Kyrgyzstan",
     "electricity_water_intensity": 15.875391,
     "unit": "litre/kWh"
   },
-  "Laos": {
+  "LA": {
+    "name": "Laos",
     "electricity_water_intensity": 73.81301695,
     "unit": "litre/kWh"
   },
-  "Latvia": {
+  "LV": {
+    "name": "Latvia",
     "electricity_water_intensity": 7.082219484,
     "unit": "litre/kWh"
   },
-  "Lebanon": {
+  "LB": {
+    "name": "Lebanon",
     "electricity_water_intensity": 5.024731161,
     "unit": "litre/kWh"
   },
-  "Lesotho": {
+  "LS": {
+    "name": "Lesotho",
     "electricity_water_intensity": 494.1332342,
     "unit": "litre/kWh"
   },
-  "Libya": {
+  "LY": {
+    "name": "Libya",
     "electricity_water_intensity": 1.822171106,
     "unit": "litre/kWh"
   },
-  "Lithuania": {
+  "LT": {
+    "name": "Lithuania",
     "electricity_water_intensity": 1.946239213,
     "unit": "litre/kWh"
   },
-  "Luxembourg": {
+  "LU": {
+    "name": "Luxembourg",
     "electricity_water_intensity": 2.303268371,
     "unit": "litre/kWh"
   },
-  "Malaysia": {
+  "MY": {
+    "name": "Malaysia",
     "electricity_water_intensity": 6.799642589,
     "unit": "litre/kWh"
   },
-  "Malta": {
+  "MT": {
+    "name": "Malta",
     "electricity_water_intensity": 1.779571776,
     "unit": "litre/kWh"
   },
-  "Mauritius": {
+  "MU": {
+    "name": "Mauritius",
     "electricity_water_intensity": 19.53772347,
     "unit": "litre/kWh"
   },
-  "Mexico": {
+  "MX": {
+    "name": "Mexico",
     "electricity_water_intensity": 5.658988397,
     "unit": "litre/kWh"
   },
-  "Moldova": {
+  "MD": {
+    "name": "Moldova",
     "electricity_water_intensity": 9.358293354,
     "unit": "litre/kWh"
   },
-  "Mongolia": {
+  "MN": {
+    "name": "Mongolia",
     "electricity_water_intensity": 2.140581899,
     "unit": "litre/kWh"
   },
-  "Montenegro": {
+  "ME": {
+    "name": "Montenegro",
     "electricity_water_intensity": 3.071888444,
     "unit": "litre/kWh"
   },
-  "Morocco": {
+  "MA": {
+    "name": "Morocco",
     "electricity_water_intensity": 8.196117889,
     "unit": "litre/kWh"
   },
-  "Mozambique": {
+  "MZ": {
+    "name": "Mozambique",
     "electricity_water_intensity": 80.78718495,
     "unit": "litre/kWh"
   },
-  "Myanmar": {
+  "MM": {
+    "name": "Myanmar",
     "electricity_water_intensity": 32.12437224,
     "unit": "litre/kWh"
   },
-  "Namibia": {
+  "NA": {
+    "name": "Namibia",
     "electricity_water_intensity": 439.7647693,
     "unit": "litre/kWh"
   },
-  "Nepal": {
+  "NP": {
+    "name": "Nepal",
     "electricity_water_intensity": 64.05069051,
     "unit": "litre/kWh"
   },
-  "Netherlands": {
+  "NL": {
+    "name": "Netherlands",
     "electricity_water_intensity": 1.347549022,
     "unit": "litre/kWh"
   },
-  "New Zealand": {
+  "NZ": {
+    "name": "New Zealand",
     "electricity_water_intensity": 4.992979526,
     "unit": "litre/kWh"
   },
-  "Nicaragua": {
+  "NI": {
+    "name": "Nicaragua",
     "electricity_water_intensity": 8.650295079,
     "unit": "litre/kWh"
   },
-  "Niger": {
+  "NE": {
+    "name": "Niger",
     "electricity_water_intensity": 1.625141464,
     "unit": "litre/kWh"
   },
-  "Nigeria": {
+  "NG": {
+    "name": "Nigeria",
     "electricity_water_intensity": 98.06898132,
     "unit": "litre/kWh"
   },
-  "North Macedonia": {
+  "MK": {
+    "name": "North Macedonia",
     "electricity_water_intensity": 2.331991336,
     "unit": "litre/kWh"
   },
-  "Norway": {
+  "NO": {
+    "name": "Norway",
     "electricity_water_intensity": 12.26694053,
     "unit": "litre/kWh"
   },
-  "Oman": {
+  "OM": {
+    "name": "Oman",
     "electricity_water_intensity": 1.82222453,
     "unit": "litre/kWh"
   },
-  "Pakistan": {
+  "PK": {
+    "name": "Pakistan",
     "electricity_water_intensity": 3.407218653,
     "unit": "litre/kWh"
   },
-  "Panama": {
+  "PA": {
+    "name": "Panama",
     "electricity_water_intensity": 38.04640739,
     "unit": "litre/kWh"
   },
-  "Paraguay": {
+  "PY": {
+    "name": "Paraguay",
     "electricity_water_intensity": 35.901122,
     "unit": "litre/kWh"
   },
-  "Peru": {
+  "PE": {
+    "name": "Peru",
     "electricity_water_intensity": 34.67756271,
     "unit": "litre/kWh"
   },
-  "Philippines": {
+  "PH": {
+    "name": "Philippines",
     "electricity_water_intensity": 1.787189811,
     "unit": "litre/kWh"
   },
-  "Poland": {
+  "PL": {
+    "name": "Poland",
     "electricity_water_intensity": 4.783074921,
     "unit": "litre/kWh"
   },
-  "Portugal": {
+  "PT": {
+    "name": "Portugal",
     "electricity_water_intensity": 1.220418286,
     "unit": "litre/kWh"
   },
-  "Qatar": {
+  "QA": {
+    "name": "Qatar",
     "electricity_water_intensity": 1.822199071,
     "unit": "litre/kWh"
   },
-  "Romania": {
+  "RO": {
+    "name": "Romania",
     "electricity_water_intensity": 54.25380693,
     "unit": "litre/kWh"
   },
-  "Russia": {
+  "RU": {
+    "name": "Russia",
     "electricity_water_intensity": 32.38640411,
     "unit": "litre/kWh"
   },
-  "Rwanda": {
+  "RW": {
+    "name": "Rwanda",
     "electricity_water_intensity": 267.6704006,
     "unit": "litre/kWh"
   },
-  "Saudi Arabia": {
+  "SA": {
+    "name": "Saudi Arabia",
     "electricity_water_intensity": 1.821719947,
     "unit": "litre/kWh"
   },
-  "Senegal": {
+  "SN": {
+    "name": "Senegal",
     "electricity_water_intensity": 32.58737378,
     "unit": "litre/kWh"
   },
-  "Serbia": {
+  "RS": {
+    "name": "Serbia",
     "electricity_water_intensity": 2.424392693,
     "unit": "litre/kWh"
   },
-  "Singapore": {
+  "SG": {
+    "name": "Singapore",
     "electricity_water_intensity": 1.795818613,
     "unit": "litre/kWh"
   },
-  "Slovakia": {
+  "SK": {
+    "name": "Slovakia",
     "electricity_water_intensity": 31.17547195,
     "unit": "litre/kWh"
   },
-  "Slovenia": {
+  "SI": {
+    "name": "Slovenia",
     "electricity_water_intensity": 2.691400556,
     "unit": "litre/kWh"
   },
-  "South Africa": {
+  "ZA": {
+    "name": "South Africa",
     "electricity_water_intensity": 4.125319412,
     "unit": "litre/kWh"
   },
-  "South Korea": {
+  "KR": {
+    "name": "South Korea",
     "electricity_water_intensity": 2.855444644,
     "unit": "litre/kWh"
   },
-  "South Sudan": {
+  "SS": {
+    "name": "South Sudan",
     "electricity_water_intensity": 1.819557344,
     "unit": "litre/kWh"
   },
-  "Spain": {
+  "ES": {
+    "name": "Spain",
     "electricity_water_intensity": 1.690882056,
     "unit": "litre/kWh"
   },
-  "Srilanka": {
+  "LK": {
+    "name": "Srilanka",
     "electricity_water_intensity": 22.2327731,
     "unit": "litre/kWh"
   },
-  "Sudan": {
+  "SD": {
+    "name": "Sudan",
     "electricity_water_intensity": 275.7103288,
     "unit": "litre/kWh"
   },
-  "Suriname": {
+  "SR": {
+    "name": "Suriname",
     "electricity_water_intensity": 36.7489099,
     "unit": "litre/kWh"
   },
-  "Sweden": {
+  "SE": {
+    "name": "Sweden",
     "electricity_water_intensity": 1.82158317,
     "unit": "litre/kWh"
   },
-  "Switzerland": {
+  "CH": {
+    "name": "Switzerland",
     "electricity_water_intensity": 284.0420424,
     "unit": "litre/kWh"
   },
-  "Syria": {
+  "SY": {
+    "name": "Syria",
     "electricity_water_intensity": 4.859932838,
     "unit": "litre/kWh"
   },
-  "Tajikistan": {
+  "TJ": {
+    "name": "Tajikistan",
     "electricity_water_intensity": 32.10081768,
     "unit": "litre/kWh"
   },
-  "Thailand": {
+  "TH": {
+    "name": "Thailand",
     "electricity_water_intensity": 5.929625938,
     "unit": "litre/kWh"
   },
-  "Togo": {
+  "TG": {
+    "name": "Togo",
     "electricity_water_intensity": 86.8239944,
     "unit": "litre/kWh"
   },
-  "Trinidad and Tobago": {
+  "TT": {
+    "name": "Trinidad and Tobago",
     "electricity_water_intensity": 1.822047744,
     "unit": "litre/kWh"
   },
-  "Tunisia": {
+  "TN": {
+    "name": "Tunisia",
     "electricity_water_intensity": 3.285781447,
     "unit": "litre/kWh"
   },
-  "Turkey": {
+  "TR": {
+    "name": "Turkey",
     "electricity_water_intensity": 8.055358827,
     "unit": "litre/kWh"
   },
-  "Turkmenistan": {
+  "TM": {
+    "name": "Turkmenistan",
     "electricity_water_intensity": 1.822266469,
     "unit": "litre/kWh"
   },
-  "Uganda": {
+  "UG": {
+    "name": "Uganda",
     "electricity_water_intensity": 427.8023463,
     "unit": "litre/kWh"
   },
-  "Ukraine": {
+  "UA": {
+    "name": "Ukraine",
     "electricity_water_intensity": 15.69573131,
     "unit": "litre/kWh"
   },
-  "United Arab Emirates": {
+  "AE": {
+    "name": "United Arab Emirates",
     "electricity_water_intensity": 1.807316737,
     "unit": "litre/kWh"
   },
-  "United Kingdom": {
+  "GB": {
+    "name": "United Kingdom",
     "electricity_water_intensity": 1.410277882,
     "unit": "litre/kWh"
   },
-  "Tanzania": {
+  "TZ": {
+    "name": "Tanzania",
     "electricity_water_intensity": 12.76642136,
     "unit": "litre/kWh"
   },
-  "Uruguay": {
+  "UY": {
+    "name": "Uruguay",
     "electricity_water_intensity": 74.60503147,
     "unit": "litre/kWh"
   },
-  "United States": {
+  "US": {
+    "name": "United States",
     "electricity_water_intensity": 2.790550498,
     "unit": "litre/kWh"
   },
-  "Uzbekistan": {
+  "UZ": {
+    "name": "Uzbekistan",
     "electricity_water_intensity": 2.158402783,
     "unit": "litre/kWh"
   },
-  "Venezuela": {
+  "VE": {
+    "name": "Venezuela",
     "electricity_water_intensity": 52.95299601,
     "unit": "litre/kWh"
   },
-  "Vietnam": {
+  "VN": {
+    "name": "Vietnam",
     "electricity_water_intensity": 17.7840211,
     "unit": "litre/kWh"
   },
-  "Yemen": {
+  "YE": {
+    "name": "Yemen",
     "electricity_water_intensity": 1.767028604,
     "unit": "litre/kWh"
   },
-  "Zambia": {
+  "ZM": {
+    "name": "Zambia",
     "electricity_water_intensity": 423.7424877,
     "unit": "litre/kWh"
   },
-  "Zimbabwe": {
+  "ZN": {
+    "name": "Zimbabwe",
     "electricity_water_intensity": 751.7994279,
     "unit": "litre/kWh"
   },

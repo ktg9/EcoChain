@@ -16,15 +16,15 @@ describe('loadMetadata()', () => {
     );
     const result = loadMetadata(filePath);
     expect(result).toStrictEqual({
-      'United States': 37.84,
-      China: 21.11,
-      Kazakhstan: 13.22,
-      Canada: 6.48,
-      Russia: 4.66,
-      Germany: 3.06,
-      Malaysia: 2.51,
-      Ireland: 1.97,
-      Iran: 0.12,
+      US: 37.84,
+      CN: 21.11,
+      KZ: 13.22,
+      CA: 6.48,
+      RU: 4.66,
+      DE: 3.06,
+      MY: 2.51,
+      IE: 1.97,
+      IR: 0.12,
       Unknown: 9.02,
     });
   });
