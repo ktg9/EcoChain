@@ -2,6 +2,7 @@ import {PluginParams} from '../../../../lib/ecochain/types';
 import {
   powCalculation,
   powWaterConsumption,
+  powLandUsage,
 } from '../../../../lib/ecochain/pow';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -143,7 +144,7 @@ describe('pow.ts', () => {
       const b0 = 90595506.70413834;
       const b1 = 6.35545318e-13;
       const hashRate = 576.04e18;
-      const totalTransactions = 297442;
+      const dailyTransactions = 297442;
 
       const defaultMiningShares = {};
       const electricityWaterIntensity = JSON.parse(
@@ -166,12 +167,77 @@ describe('pow.ts', () => {
         b0,
         b1,
         hashRate,
-        totalTransactions,
+        dailyTransactions,
         miningSharesFile,
         defaultMiningShares,
         electricityWaterIntensity
       );
       const expectedResult = 32618.398678432943;
+      expect(result).toStrictEqual(expectedResult);
+    });
+  });
+
+  describe('powLandUsage()', () => {
+    it('Correct land usage calculation', () => {
+      expect.assertions(1);
+      const miningSharesFile = path.resolve(
+        __dirname,
+        '..',
+        '..',
+        '..',
+        '..',
+        '..',
+        'config',
+        'bitcoin_mining_shares.json'
+      );
+      const b0 = 90595506.70413834;
+      const b1 = 6.35545318e-13;
+      const hashRate = 576.04e18;
+      const dailyTransactions = 297442;
+
+      const defaultMiningShares = {};
+      const electricityMixByCountries = JSON.parse(
+        fs.readFileSync(
+          path.resolve(
+            __dirname,
+            '..',
+            '..',
+            '..',
+            '..',
+            '..',
+            'config',
+            'electricity_mix_by_countries.json'
+          ),
+          'utf-8'
+        )
+      );
+      const electricityGenerationLandUseIntensity = JSON.parse(
+        fs.readFileSync(
+          path.resolve(
+            __dirname,
+            '..',
+            '..',
+            '..',
+            '..',
+            '..',
+            'config',
+            'electricity_generation_land_use_intensity.json'
+          ),
+          'utf-8'
+        )
+      );
+
+      const result = powLandUsage(
+        b0,
+        b1,
+        hashRate,
+        dailyTransactions,
+        miningSharesFile,
+        defaultMiningShares,
+        electricityMixByCountries,
+        electricityGenerationLandUseIntensity
+      );
+      const expectedResult = 39.68218341744669;
       expect(result).toStrictEqual(expectedResult);
     });
   });

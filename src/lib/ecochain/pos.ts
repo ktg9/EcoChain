@@ -3,8 +3,8 @@ import {validateInput} from './validation';
 
 /**
  * Calculate Proof-of-work blockchain environmental impacts
- * @param inputs -> received from yml file
- * @param models -> models list, models include parameters for calculation. E.g, if it's linear regression, models include
+ * @param inputs  received from yml file
+ * @param models  models list, models include parameters for calculation. E.g, if it's linear regression, models include
  * b0 and b1
  * @return PluginParams
  */

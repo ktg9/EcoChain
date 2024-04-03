@@ -1,18 +1,17 @@
 import {PluginParams} from './types';
 import {validateInput} from './validation';
-import * as fs from 'fs';
-import * as path from 'path';
-import {ERRORS} from './error';
+
+import {getMiningSharesData} from './helper';
 
 /**
  * Calculate Proof-of-work blockchain environmental impacts
- * @param inputs -> received from yml file
- * @param models -> models list, models include parameters for calculation. E.g, if it's linear regression, models include
+ * @param inputs received from yml file
+ * @param models models list, models include parameters for calculation. E.g, if it's linear regression, models include
  * b0 and b1
- * @param defaulMiningShares -> default mining shares for each country
- * @param electricityWaterIntensity -> electricity water intensity in L/kWH for each country
- * @param electricityMixByCountries -> electricity mix by countries
- * @param electricityGenerationLandUseIntensity -> electricity generations land use intensity
+ * @param defaulMiningShares default mining shares for each country
+ * @param electricityWaterIntensity electricity water intensity in L/kWH for each country
+ * @param electricityMixByCountries electricity mix by countries
+ * @param electricityGenerationLandUseIntensity electricity generations land use intensity
  * @return PluginParams
  */
 export const powCalculation = (
@@ -27,7 +26,7 @@ export const powCalculation = (
     validateInput(input, index, 'pow');
     // Calculate Proof-of-Work footprints
     const hashRate = input['hash_rate'];
-    const totalTransactions = input['daily_transactions'];
+    const dailyTransactions = input['daily_transactions'];
     const miningSharesFile = input['mining_shares_file'];
     const output: any = {};
     models.map(model => {
@@ -39,7 +38,7 @@ export const powCalculation = (
           b0,
           b1,
           hashRate,
-          totalTransactions,
+          dailyTransactions,
           miningSharesFile,
           defaulMiningShares,
           electricityWaterIntensity
@@ -49,14 +48,14 @@ export const powCalculation = (
           b0,
           b1,
           hashRate,
-          totalTransactions,
+          dailyTransactions,
           miningSharesFile,
           defaulMiningShares,
           electricityMixByCountries,
           electricityGenerationLandUseIntensity
         );
       } else {
-        output[type] = (b0 + b1 * hashRate) / totalTransactions;
+        output[type] = (b0 + b1 * hashRate) / dailyTransactions;
       }
     });
     return {
@@ -66,11 +65,23 @@ export const powCalculation = (
   });
 };
 
+/**
+ * Calculate PoW transaction land usage
+ * @param b0 b0 param of power demand linear regression model
+ * @param b1 b1 param of power demand linear regression model
+ * @param hashRate the current hash rate
+ * @param dailyTransactions daily transactions
+ * @param miningSharesFile mining shares file path input by user
+ * @param defaultMiningShares default mining shares
+ * @param electricityMixByCountries electricity mix by countries
+ * @param electricityGenerationLandUseIntensity electricity generation land use intensity
+ * @return land use per PoW transaction in m2/year
+ */
 export const powLandUsage = (
   b0: number,
   b1: number,
   hashRate: number,
-  totalTransactions: number,
+  dailyTransactions: number,
   miningSharesFile: any,
   defaultMiningShares: any,
   electricityMixByCountries: any,
@@ -101,42 +112,26 @@ export const powLandUsage = (
         electricityGenerationLandUseIntensity[sector]['land_use_intensity'];
     });
   });
-  return totalLandUsage / totalTransactions;
+  return totalLandUsage / dailyTransactions;
 };
-export const getMiningSharesData = (
-  miningSharesFile: any,
-  defaultMiningShares: any
-): any => {
-  let miningSharesData: any;
-  if (miningSharesFile === undefined) {
-    miningSharesData = defaultMiningShares;
-  } else {
-    try {
-      const fileData = fs.readFileSync(path.resolve(miningSharesFile), 'utf-8');
-      miningSharesData = JSON.parse(fileData);
-    } catch (error) {
-      console.log(error);
-      throw new Error(ERRORS.INVALID_MINING_SHARES_FILE(miningSharesFile));
-    }
-  }
-  return miningSharesData;
-};
+
 /**
- * @param b0 -> linear regression model b0
- * @param b1 -> linear regression model b1
- * @param hashRate -> current hash rate
- * @param totalTransactions -> total transactions last 24h
- * @param miningSharesFile -> path to mining shares file, if undefined, the default
+ * Calculate PoW transaction water consumption
+ * @param b0  linear regression model b0
+ * @param b1  linear regression model b1
+ * @param hashRate  current hash rate
+ * @param dailyTransactions  total transactions last 24h
+ * @param miningSharesFile  path to mining shares file, if undefined, the default
  * mining shares will be used instead.
- * @param defaultMiningShares -> default mining shares for each country
- * @param electricityWaterIntensity -> electricity water intensity in L/kWH for each country
+ * @param defaultMiningShares  default mining shares for each country
+ * @param electricityWaterIntensity  electricity water intensity in L/kWH for each country
  * @return water consumption for each transaction in litre (L)
  */
 export const powWaterConsumption = (
   b0: number,
   b1: number,
   hashRate: number,
-  totalTransactions: number,
+  dailyTransactions: number,
   miningSharesFile: string,
   defaultMiningShares: any,
   electricityWaterIntensity: any
@@ -158,6 +153,6 @@ export const powWaterConsumption = (
   });
 
   return (
-    (directWaterConsumption + indirectWaterConsumption) / totalTransactions
+    (directWaterConsumption + indirectWaterConsumption) / dailyTransactions
   );
 };
