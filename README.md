@@ -73,9 +73,6 @@ plugin: to demonstrate to the majority of blockchain users the environmental imp
    you'll find a file (or multiple files) that outlines the calculation process,
    e.g [data/pow/bitcoin/Bitcoin-transaction-ewaste.md](data/pow/bitcoin/Bitcoin-transaction-ewaste.md)
 
-- [data/pos](data/pos): Calculating parameters for proof of stake
-
-- [data/pow](data/pow): Calculating parameters for proof of work
 
 
 
