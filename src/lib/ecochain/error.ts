@@ -1,3 +1,6 @@
+/**
+ * Errors used in plugin code
+ */
 export const ERRORS = {
   LOADING_JSON_METADATA_FILE:
     'Error while loading json metadata file, it should locate in folder config.',

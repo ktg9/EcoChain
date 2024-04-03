@@ -17,8 +17,8 @@ export const posCalculation = (
     // Calculate Proof-of-Stake footprints
     const gasUsed = input['gas_used'];
     const nodeCount = input['node_count'];
-
     const output: any = {};
+    // Loop through each model and calculate
     models.map(model => {
       const type = model['type'];
       const b1 = model['b1'];

@@ -96,13 +96,15 @@ export const powLandUsage = (
 
   // Calculate total land use
   let totalLandUsage = 0;
+
+  // For each country in mining shares data
   Object.keys(miningSharesData).forEach(country => {
     if (electricityMixByCountries[country] === undefined) {
       return;
     }
     const miningShare = miningSharesData[country];
     const country_power_demand = (powerDemand * miningShare) / 100;
-    // Loop through each electricity generation technology (biomass, hydro,..)
+    // For each electricity generation technology (biomass, hydro,...) within a country
     Object.keys(electricityMixByCountries[country]).forEach(sector => {
       const sector_power_demand =
         (country_power_demand * electricityMixByCountries[country][sector]) /
@@ -145,10 +147,11 @@ export const powWaterConsumption = (
   const powerDemand = b0 + b1 * hashRate;
   const directWaterConsumption = powerDemand * 1.8;
   let indirectWaterConsumption = 0;
-  Object.keys(miningSharesData).forEach(key => {
-    const miningShare = miningSharesData[key];
+  // For each country in mining share data
+  Object.keys(miningSharesData).forEach(country => {
+    const miningShare = miningSharesData[country];
     const intensity =
-      electricityWaterIntensity[key]['electricity_water_intensity'];
+      electricityWaterIntensity[country]['electricity_water_intensity'];
     indirectWaterConsumption += (miningShare * powerDemand * intensity) / 100;
   });
 
