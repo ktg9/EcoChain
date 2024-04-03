@@ -47,6 +47,36 @@ I believe that quantifying the environmental impact associated with users' actio
 educate users about the environmental issues related to blockchain technology as a whole. That's the purpose of this
 plugin: to demonstrate to the majority of blockchain users the environmental impact of their actions.
 
+### Project structure
+
+1. [src](src) : GSF plugin source code and unit tests
+
+2. [methodology](methodology): Contains markdown files demonstrating
+   the methodology for calculating blockchain environmental impacts:
+
+- [Proof-of-stake-emissions.md](methodology/Proof-of-stake-emissions.md): methodology for calculating
+  Proof of stake blockchains transaction emission
+- [Proof-of-work-emissions.md](methodology/Proof-of-work-emissions.md): methodology for calculating
+  Proof of work blockchains transaction emission
+- [Bitcoin-ewaste.md](methodology/Bitcoin-ewaste.md): methodology for calculating
+  Bitcoin transaction electronic waste
+- [Bitcoin-water-consumption.md](methodology/Bitcoin-water-consumption.md): methodology for calculating
+  Bitcoin transaction water consumption
+- [Bitcoin-land-usage.md](methodology/Bitcoin-land-usage.md): methodology for calculating Bitcoin transaction
+  land usage
+
+3. [data](data): This repository contains the source code (in Python) for calculating parameters required by the plugin,
+   such as
+   linear regression parameters. It also provides details on the data sources necessary for calculating these
+   parameters. Each folder, such as [data/pos/bitcoin](data/pow/bitcoin), corresponds to a specific blockchain network.
+   Within each folder,
+   you'll find a file (or multiple files) that outlines the calculation process,
+   e.g [data/pow/bitcoin/Bitcoin-transaction-ewaste.md](data/pow/bitcoin/Bitcoin-transaction-ewaste.md)
+
+- [data/pos](data/pos): Calculating parameters for proof of stake
+
+- [data/pow](data/pow): Calculating parameters for proof of work
+
 
 
 
