@@ -8,7 +8,7 @@ export const ERRORS = {
   MISSING_BLOCKCHAIN_CONFIG: 'Missing blockchain param in global config.',
   INVALID_INPUT: (index: number, blockchainType: string) => {
     if (blockchainType === 'pow') {
-      return `Invalid input index ${index}, POW blockchain requires hash_rate and total_transactions input.`;
+      return `Invalid input index ${index}, POW blockchain requires hash_rate and daily_transactions input.`;
     } else {
       return `Invalid input index ${index}, POS blockchain requires gas_used and node_count input.`;
     }

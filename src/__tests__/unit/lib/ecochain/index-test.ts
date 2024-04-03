@@ -11,7 +11,7 @@ describe('Execute()', () => {
     const expectedResult = [
       {
         hash_rate: 576040000000000000000,
-        total_transactions: 297442,
+        daily_transactions: 297442,
         carbon: 777.1462638608228,
         ewaste: 117.04562027241327,
         fresh_water: 32618.398678432943,
@@ -22,7 +22,7 @@ describe('Execute()', () => {
     const result = ecoChain.execute([
       {
         hash_rate: 576.04e18,
-        total_transactions: 297442,
+        daily_transactions: 297442,
       },
     ]);
     expect(result).toStrictEqual(expectedResult);

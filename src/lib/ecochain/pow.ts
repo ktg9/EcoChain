@@ -27,7 +27,7 @@ export const powCalculation = (
     validateInput(input, index, 'pow');
     // Calculate Proof-of-Work footprints
     const hashRate = input['hash_rate'];
-    const totalTransactions = input['total_transactions'];
+    const totalTransactions = input['daily_transactions'];
     const miningSharesFile = input['mining_shares_file'];
     const output: any = {};
     models.map(model => {

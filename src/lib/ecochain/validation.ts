@@ -47,7 +47,7 @@ export const validateInput = (
       hash_rate: z.number({
         required_error: `required in input[${index}]`,
       }),
-      total_transactions: z.number({
+      daily_transactions: z.number({
         required_error: `required in input[${index}]`,
       }),
     });

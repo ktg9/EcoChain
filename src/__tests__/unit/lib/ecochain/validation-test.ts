@@ -45,7 +45,7 @@ describe('validateInput', () => {
   });
 
   describe('validateInput()', () => {
-    it('pow - throws INVALID_INPUT error when "hash_rate" or "total_transactions" is missing in input', () => {
+    it('pow - throws INVALID_INPUT error when "hash_rate" or "daily_transactions" is missing in input', () => {
       const blockchainType = 'pow';
       const input = {};
       expect(() => validateInput(input, 0, blockchainType)).toThrow(
@@ -55,7 +55,7 @@ describe('validateInput', () => {
 
     it('pow - validation pass', () => {
       const blockchainType = 'pow';
-      const input = {hash_rate: 100, total_transactions: 50};
+      const input = {hash_rate: 100, daily_transactions: 50};
       expect(() => validateInput(input, 0, blockchainType)).not.toThrow();
     });
 
