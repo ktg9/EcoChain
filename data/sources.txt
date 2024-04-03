@@ -22,12 +22,14 @@ Proof of Work:
     Hash-rate: https://bitinfocharts.com/bitcoin/
     Transactions: https://bitinfocharts.com/bitcoin/
 
+https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser?country=WEOAFRICA&fuel=Energy%20supply&indicator=TESbySource
+https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023EF003871
+https://www.academia.edu/66160256/The_relative_aggregate_footprint_of_electricity_generation_technologies_in_the_European_Union_EU_A_system_of_systems_approach?auto=download
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0006802#pone.0006802.s004
 
 
-
-
-
-
+This is for land use intensity
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0270155#pone-0270155-t001
 
 
 

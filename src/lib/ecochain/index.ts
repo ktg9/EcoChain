@@ -24,6 +24,8 @@ export const EcoChain = (
    * - defaultBitcoinMiningShares: contain default bitcoin mining shares by countries
    * - electricityWaterIntensity: electricity water intensity by countries in L/kWh
    * - supportedBlockchains: supported blockchains, used to validate user input
+   * - electricityMixByCountries: electricity mix of countries
+   * - electricityGenerationLandUseIntensity: land use intensity in m2/year of electricity generation technologies
    */
   const blockchainConfig = loadMetadata(
     path.resolve(
@@ -55,6 +57,26 @@ export const EcoChain = (
       'electricity_water_intensity.json'
     )
   );
+  const electricityMixByCountries = loadMetadata(
+    path.resolve(
+      __dirname,
+      '..',
+      '..',
+      '..',
+      'config',
+      'electricity_mix_by_countries.json'
+    )
+  );
+  const electricityGenerationLandUseIntensity = loadMetadata(
+    path.resolve(
+      __dirname,
+      '..',
+      '..',
+      '..',
+      'config',
+      'electricity_generation_land_use_intensity.json'
+    )
+  );
   const supportedBlockchains = blockchainConfig['supported_blockchains'];
 
   /**
@@ -73,7 +95,9 @@ export const EcoChain = (
         inputs,
         models,
         defaultBitcoinMiningShares,
-        electricityWaterIntensity
+        electricityWaterIntensity,
+        electricityMixByCountries,
+        electricityGenerationLandUseIntensity
       );
     } else {
       outputs = posCalculation(inputs, models);

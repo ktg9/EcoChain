@@ -1,0 +1,34 @@
+{
+  "Biomass": {
+    "land_use_intensity": 0.58,
+    "unit": "m2/kWh/year"
+  },
+  "Solar CSP": {
+    "land_use_intensity": 0.013,
+    "unit": "m2/kWh/year"
+  },
+  "Solar PV": {
+    "land_use_intensity": 0.02,
+    "unit": "m2/kWh/year"
+  },
+  "Wind": {
+    "land_use_intensity": 0.1213,
+    "unit": "m2/kWh/year"
+  },
+  "Hydro": {
+    "land_use_intensity": 0.0065,
+    "unit": "m2/kWh/year"
+  },
+  "Coal": {
+    "land_use_intensity": 0.01,
+    "unit": "m2/kWh/year"
+  },
+  "Natural Gas": {
+    "land_use_intensity": 0.0231,
+    "unit": "m2/kWh/year"
+  },
+  "Nuclear": {
+    "land_use_intensity": 7.1e-05,
+    "unit": "m2/kWh/year"
+  }
+}

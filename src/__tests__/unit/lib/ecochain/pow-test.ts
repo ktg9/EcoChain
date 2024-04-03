@@ -32,6 +32,11 @@ describe('pow.ts', () => {
           b0: 90595506.70413834,
           b1: 6.35545318e-13,
         },
+        {
+          type: 'land',
+          b0: 90595506.70413834,
+          b1: 6.35545318e-13,
+        },
       ];
       const defaultMiningShares = JSON.parse(
         fs.readFileSync(
@@ -63,12 +68,44 @@ describe('pow.ts', () => {
           'utf-8'
         )
       );
+      const electricityMixByCountries = JSON.parse(
+        fs.readFileSync(
+          path.resolve(
+            __dirname,
+            '..',
+            '..',
+            '..',
+            '..',
+            '..',
+            'config',
+            'electricity_mix_by_countries.json'
+          ),
+          'utf-8'
+        )
+      );
+      const electricityGenerationLandUseIntensity = JSON.parse(
+        fs.readFileSync(
+          path.resolve(
+            __dirname,
+            '..',
+            '..',
+            '..',
+            '..',
+            '..',
+            'config',
+            'electricity_generation_land_use_intensity.json'
+          ),
+          'utf-8'
+        )
+      );
 
       const result = powCalculation(
         inputs,
         models,
         defaultMiningShares,
-        electricityWaterIntensity
+        electricityWaterIntensity,
+        electricityMixByCountries,
+        electricityGenerationLandUseIntensity
       );
       const expectedResult = [
         {
@@ -77,6 +114,7 @@ describe('pow.ts', () => {
           carbon: 777.1462638608228,
           ewaste: 117.04562027241327,
           fresh_water: 32618.398678432943,
+          land: 39.68218341744669,
         },
       ];
       expect(result).toStrictEqual(expectedResult);

@@ -1,0 +1,80 @@
+{
+  "CN": {
+    "Coal": 63,
+    "Nuclear": 4.7,
+    "Natural Gas": 3.16,
+    "Hydro": 15.6,
+    "Biomass": 1.9,
+    "Solar PV": 3.8,
+    "Solar CSP": 0.023,
+    "Wind": 7.6
+  },
+  "US": {
+    "Coal": 20.2,
+    "Natural Gas": 38.7,
+    "Nuclear": 17.9,
+    "Hydro": 6.4,
+    "Biomass": 1.13,
+    "Wind": 9.8,
+    "Solar PV": 4.1,
+    "Solar CSP": 0.072
+  },
+  "KZ": {
+    "Coal": 59.1,
+    "Natural Gas": 26.7,
+    "Hydro": 8,
+    "Wind": 1.5,
+    "Solar PV": 1.42
+  },
+  "CA": {
+    "Coal": 4.5,
+    "Natural Gas": 12.4,
+    "Nuclear": 13.3,
+    "Hydro": 60.8,
+    "Wind": 5.7,
+    "Solar PV": 1.06,
+    "Biomass": 1.5
+  },
+  "RU": {
+    "Coal": 16.1,
+    "Natural Gas": 44.32,
+    "Biomass": 0.006,
+    "Nuclear": 19.3,
+    "Hydro": 18.7,
+    "Solar PV": 0.19,
+    "Wind": 0.28
+  },
+  "DE": {
+    "Coal": 32.8,
+    "Natural Gas": 15.5,
+    "Biomass": 7.05,
+    "Nuclear": 5.89,
+    "Hydro": 4,
+    "Solar PV": 10.3,
+    "Wind": 21.25
+  },
+  "MY": {
+    "Coal": 47.9,
+    "Natural Gas": 32.46,
+    "Biomass": 0.68,
+    "Hydro": 17.2,
+    "Solar PV": 1.13
+  },
+  "IE": {
+    "Coal": 7.7,
+    "Natural Gas": 48.9,
+    "Biomass": 1.96,
+    "Hydro": 2.8,
+    "Solar PV": 0.339,
+    "Wind": 33
+  },
+  "IR": {
+    "Coal": 0.243,
+    "Natural Gas": 85.69,
+    "Biomass": 0.0066,
+    "Nuclear": 0.9,
+    "Hydro": 4.6,
+    "Solar PV": 0.18,
+    "Wind": 0.22
+  }
+}
