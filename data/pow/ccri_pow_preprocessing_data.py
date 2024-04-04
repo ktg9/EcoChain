@@ -1,7 +1,7 @@
 import json
 import os
 
-blockchain = 'bitcoin'
+blockchain = 'litecoin'
 
 # Preprocessing emissions data
 filepath = os.path.dirname(__file__)
@@ -15,7 +15,8 @@ if os.path.exists(emission_raw_file_path):
 
     emissions_data = ["Date,Emissions(g)"]
     for entry in json_data["entries"]:
-        emissions_data.append("{},{}".format(entry["date"], entry["emissions_24h"] * 1000000))
+        # The emission data is measured in millions tons or 10**6 ton = 10**12 g
+        emissions_data.append("{},{}".format(entry["date"], entry["emissions_24h"] * 10**12))
 
     emissions_file.write("\n".join(emissions_data))
 

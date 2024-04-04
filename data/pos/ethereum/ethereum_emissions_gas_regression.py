@@ -40,7 +40,7 @@ for i in range((end_date - start_date).days + 1):
     # emission = (base_power_demand + marginal_power * tps) * carbon_intensity
     carbon_emission_per_day.append(24 * (transaction_data[date]
                                          * marginal_power_per_tps / (24 * 3600)
-                                         + base_power_demand) * carbon_intensity / 1000)
+                                         + base_power_demand) * carbon_intensity)
     gas_per_day.append(gas_data[date])
 
 # Linear regression
@@ -57,4 +57,4 @@ plt.xlabel('Gas')
 plt.ylabel('Emissions(g)')
 plt.show()
 
-# b0: 536.379926669664 , b1 : [-7.33293797e-11], R square : 0.0036297817564953094
+# b0: 536379.9266696639 , b1 : [-7.33293797e-08], R square : 0.0036297817564994173
