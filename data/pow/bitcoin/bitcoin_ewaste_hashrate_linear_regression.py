@@ -9,6 +9,7 @@ filepath = os.path.dirname(__file__)
 bitcoin_ewaste = {}
 bitcoin_hashrate = {}
 
+# Load e waste and hash rate data
 for line in open(os.path.join(filepath, 'data', 'bitcoin_ewaste_per_day.csv')).readlines()[1:]:
     parts = line.split(',')
     date = parts[0]
@@ -19,6 +20,7 @@ for line in open(os.path.join(filepath, 'data', 'bitcoin_hashrate.csv')).readlin
     date = parts[0]
     bitcoin_hashrate[date] = float(parts[1].strip())
 
+# Process data for linear regression
 start_date = datetime.strptime('2023-01-01', '%Y-%m-%d')
 end_date = datetime.strptime('2024-03-19', '%Y-%m-%d')
 bitcoin_hashrate_data = []

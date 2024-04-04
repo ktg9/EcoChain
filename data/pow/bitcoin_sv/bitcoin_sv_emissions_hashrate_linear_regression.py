@@ -8,6 +8,7 @@ filepath = os.path.dirname(__file__)
 emissions = {}
 hashrate = {}
 
+# Load emission and hash rate data
 for line in open(os.path.join(filepath, 'data', 'bitcoin_sv_emissions.csv')).readlines()[1:]:
     parts = line.split(',')
     date = parts[0]
@@ -18,6 +19,7 @@ for line in open(os.path.join(filepath, 'data', 'bitcoin_sv_hashrate.csv')).read
     date = parts[0]
     hashrate[date] = float(parts[1].strip())
 
+# Prepare data for linear regression
 emissions_per_day = []
 hashrate_per_day = []
 start_date = datetime.strptime('2020-01-01', '%Y-%m-%d')
