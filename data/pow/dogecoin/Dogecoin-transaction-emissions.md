@@ -3,11 +3,11 @@
 ### Dogecoin source and data preprocessing
 
 - `Dogecoin total emissions per day`:
-    + File location: raw/dogecoin_ccri_emissions.json
+    + File location: [data/raw/dogecoin_ccri_emissions.json](data/raw/dogecoin_ccri_emissions.json)
     + This data is obtained from [Crypto Carbon Rating Institue API](https://docs.api.carbon-ratings.com/v2/#/)
 
 - `Dogecoin average hashrate per day`:
-    + File location: dogecoin_hashrate.csv
+    + File location: [data/dogecoin_hashrate.csv](data/dogecoin_emissions.csv)
     + This data is crawled from [bitinfocharts](https://bitinfocharts.com/comparison/hashrate-doge.html)
 
 ### Degecoin transaction emissions calculation
@@ -21,7 +21,7 @@
 2. `Linear regression`
 
 - File [dogecoin_emissions_hashrate_linear_regression.py](dogecoin_emissions_hashrate_linear_regression.py) is responsible
-  for finding the relationship of emissions per day and total hashrate per day.
+  for finding the relationship of emissions per day and average hashrate per day.
 
 - The result is a quite strong correlation of emissions and hashrate with data from
   2023-01-01 to 2024-03-19 with `R square` = 0.960132560715477

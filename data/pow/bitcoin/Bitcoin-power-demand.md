@@ -14,7 +14,7 @@
 
 1. `Data cleaning`: This step will clean/convert raw data from various
    sources for later steps:
-  - File pow/ccri_pow_preprocessing_data.py is used for cleaning CCRI pow power demand data for
+  - File [ccri_pow_preprocessing_data.py](../ccri_pow_preprocessing_data.py) is used for cleaning CCRI pow power demand data for
     all blockchains including bitcoin, change variable `blockchain = 'bitcoin''` to run.
     The result is file [bitcoin_power_demand.csv](data/bitcoin_power_demand.csv)
 

@@ -3,17 +3,17 @@
 ### Data source and data preprocessing
 
 - `Bitcoin mining equipment`:
-    + File location: raw/bitcoin_mining_equipments_raw.csv
+    + File location: [data/raw/bitcoin_mining_equipments_raw.csv](data/raw/bitcoin_mining_equipments_raw.csv)
     + This data is maintained by CBECI at this [link](http://sha256.cbeci.org).
     Note that this link is missing some equipments' weight, these data need to be
     filled by searching online.
 
 - `Bitcoin breakeven threshold`:
-    + File location: raw/bitcoin_cbeci_breakeven_threshold_raw.json
+    + File location: [data/raw/bitcoin_cbeci_breakeven_threshold_raw.json](data/raw/bitcoin_cbeci_breakeven_threshold_raw.json)
     + This data is crawled from [CBECI methodology site](https://ccaf.io/cbnsi/cbeci/ghg/methodology)
   
 - `Bitcoin average hashrate per day`:
-    + File location: bitcoin_hashrate.csv
+    + File location: [data/bitcoin_hashrate.csv](data/bitcoin_hashrate.csv)
     + This data is crawled from [bitinfocharts](https://bitinfocharts.com/comparison/bitcoin-hashrate.html)
 
 ### Bitcoin transaction emissions calculation
@@ -31,7 +31,7 @@ and methodology for more details.
 3. `Linear regression`
 
 - File [bitcoin_ewaste_hashrate_linear_regression.py](bitcoin_ewaste_hashrate_linear_regression.py) is responsible
-  for finding the relationship of ewaste per day and total hashrate per day.
+  for finding the relationship of ewaste per day and average hashrate per day.
 
 - The result is a strong correlation of emissions and hashrate with data from
   2023-01-01 to 2024-03-19 with `R square` = 0.8988278893042796

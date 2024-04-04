@@ -3,18 +3,18 @@
 ### Data source and data preprocessing
 
 - `Bitcoin total emissions per day`:
-    + File location: raw/bitcoin_ccri_emissions.json
+    + File location: [data/raw/bitcoin_ccri_emissions.json](data/raw/bitcoin_ccri_emissions.json)
     + This data is obtained from [Crypto Carbon Rating Institue API](https://docs.api.carbon-ratings.com/v2/#/)
 
 - `Bitcoin average hashrate per day`:
-    + File location: bitcoin_hashrate.csv
+    + File location: [data/bitcoin_hashrate.csv](data/bitcoin_hashrate.csv)
     + This data is crawled from [bitinfocharts](https://bitinfocharts.com/comparison/bitcoin-hashrate.html)
 
 ### Bitcoin transaction emissions calculation
 
 1. `Data cleaning`: This step will clean/convert raw data from various
    sources for later steps:
-    - File pow/ccri_pow_preprocessing_data.py is used for cleaning CCRI pow emissions data for
+    - File [ccri_pow_preprocessing_data.py](../ccri_pow_preprocessing_data.py) is used for cleaning CCRI pow emissions data for
       all blockchains including bitcoin, change variable `blockchain = 'bitcoin''` to run.
       The result is file [bitcoin_emissions.csv](data/bitcoin_emissions.csv)
 
