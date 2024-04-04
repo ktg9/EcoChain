@@ -36,7 +36,7 @@ for i in range((end_date - start_date).days + 1):
     # emission = (base_power_demand + marginal_power * tps) * carbon_intensity
     carbon_emission_per_day.append(24 * (transaction_data[date]
                                          * marginal_power_per_tps / (24 * 3600)
-                                         + base_power_demand) * carbon_intensity)
+                                         + base_power_demand) * carbon_intensity / 1000)
     gas_per_day.append(gas_data[date])
 
 x = np.array(gas_per_day).reshape((-1, 1))
@@ -55,4 +55,4 @@ plt.ylabel('Emissions(g) Per Node')
 
 plt.show()
 
-# b0: 371176.11237420846 , b1 : [4.89823124e-07], R square : 0.9259692236233719
+# b0: 371.1761123742084 , b1 : [4.89823124e-10], R square : 0.925969223623372

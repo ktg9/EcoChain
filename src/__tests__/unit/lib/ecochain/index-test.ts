@@ -12,7 +12,7 @@ describe('Execute()', () => {
       {
         hash_rate: 576040000000000000000,
         daily_transactions: 297442,
-        carbon: 0.777146263860823,
+        carbon: 777146.2638608229,
         ewaste: 117.04562027241327,
         fresh_water: 32618.398678432943,
         land: 39.68218341744669,
