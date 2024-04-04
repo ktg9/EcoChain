@@ -16,54 +16,74 @@ system change."
 
 Bitcoin land footprint is also a serious
 issue. [UN study](https://unu.edu/press-release/un-study-reveals-hidden-environmental-impacts-bitcoin-carbon-not-only-harmful-product)
-estimates that Bitcoin footprint is about 1.4 times the area of the Los Angeles (1,870 square kilometers). If we take
-population density as 16 people/km2 (global average), that area can be inhabited by 30,000 people.
+estimates that Bitcoin footprint is about 1.4 times the area of the Los Angeles (1,870 square kilometers).
 
 ### Methodology
 
-The methodology of this plugin to estimate bitcoin transaction land use is based on
+The methodology used by this plugin to estimate land use in Bitcoin transactions is based on the research outlined in
 this [paper](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023EF003871)
 and data from [CCRI API](https://v2.api.carbon-ratings.com/documentation). Below is the summary of the methodology:
 
-1. `Land use intensity`: Land use intensity (LUI) is a known socioecologic metric that attempts to calculate how much
-   land is required in order to obtain a certain product.
-   LUI is an extremely important metric because the more land is used in a certain process, the less land is available
-   for other, sometimes nobler applications such as food production,
-   the more social strife there is, and the more conflicts occur due to land distribution.
-   In this methodology, we will look specifically Land use intensity of electricity production.
+1. `Land use intensity`: Land use intensity (LUI) is a recognized socioecological metric that seeks to quantify the
+   amount of land needed to produce a specific product. LUI holds significant importance because increased land usage in
+   a particular process can limit availability for other vital purposes, such as food production. This can lead to
+   social conflicts and tensions arising from land distribution issues. In this methodology, our focus will be on
+   assessing the land use intensity associated with electricity production
 
-2. Electricity production LUI will estimate how much land is required to produce electricity. For example:
+2. Electricity production LUI estimates the amount of land needed to generate electricity.. For example:
 
 ![Land Use Intensity of electricity production](img/land_LUI_examples.png)
 The unit here is ha/TWH/y so can see from column `LUIE Median` that to produce 1 TWH of `Hydroelectric`,
 650 ha of land must be used in a year.
-The plugin uses LUI values of this [research](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0270155#pone-0270155-t001).
+The plugin uses LUI values of
+this [research](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0270155#pone-0270155-t001).
 
-3. With the above data, we can estimate how much land Bitcoin uses if we know
-how much electricity it consumes and the distribution of electricity consumption across
-different technologies (hydroelectric, nuclear,...).
+3. With the provided data, we can approximate the amount of land utilized by Bitcoin by considering its electricity
+   consumption and the distribution of electricity consumption across various technologies (such as hydroelectric,
+   nuclear, etc.).
 
 To do this, the methodology relies on 2 data sources:
-- [CCAF mining map](https://ccaf.io/cbnsi/cbeci/mining_map), this will provide
-information about how much bitcoin total hashrate distribution (e.g China 21.1%, us 37.8%, etc...)
-We assume in this situation that hashrate distribution is also power demand distribution. 
-- The International Energy Agency (IEA) on electricity sources of each country.
-For example, [us electricity sources](https://www.iea.org/countries/united-states/electricity)
+
+- [CCAF mining map](https://ccaf.io/cbnsi/cbeci/mining_map), this information offers insights into the distribution of
+  Bitcoin's total hashrate (e.g., China 21.1%, US 37.8%, etc.). The methodology operates under the assumption that the
+  distribution of hashrate is also representative of the distribution of power demand.
+  For example, [us electricity sources](https://www.iea.org/countries/united-states/electricity)
 
 ![IEA electricity sources](img/land_iea_example.png)
 
-In here we then need to assume that the electricity to mine Bitcoin is distributed
-the same with the country's electricity distribution across different technologies (Coal, Oil,...)
+Here, we need to make the assumption that the electricity used for Bitcoin mining is distributed in alignment with each
+country's electricity distribution across various technologies (such as coal, oil, etc.).
 
 4. Calculate Bitcoin transaction land use:
-- First a regression model is built to find relationship between hashrate and power demand,
-if a strong correlation found, we can use the model to calculate power demand based on future hashrate.
-- Then bitcoin land use can be calculated as follow:
+
+- First, a regression model is constructed to identify the relationship between hashrate and power demand. If a strong
+  correlation is discovered, the model can then be utilized to estimate power demand based on future hashrate value.
+- Then bitcoin land use can be calculated as follows:
   + First get the total Bitcoin power demand
   + Then use mining map to calculate each country Bitcoin electricity consumption
   + Then use IEA data to calculate land footprint for each country as:
-  `country Bitcoin land footprint = sum(sector_share * sector_LUI)`.
-  In that `sector_share` is the energy sector (Coal, Nuclear,...) share in the country electricity mix,
-  `sector_LUI` is the sector land usage intensity.
+    `country Bitcoin land footprint = sum(sector_share * sector_LUI)`.
+    In that `sector_share` is the energy sector (Coal, Nuclear,...) share in the country electricity mix,
+    `sector_LUI` is the sector land usage intensity.
 
-- Calculate Bitcoin transaction land use  = (bitcoin daily land use)/(daily transactions)
+- Calculate Bitcoin transaction land use = `(bitcoin daily land use)/(daily transactions)`
+
+### Reference
+
+1. United Nations University
+   article: https://unu.edu/press-release/un-study-reveals-hidden-environmental-impacts-bitcoin-carbon-not-only-harmful-product
+2. Land-use intensity of electricity production and tomorrow’s energy
+   landscape: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0270155#pone-0270155-t001
+3. CCAF mining map: https://ccaf.io/cbnsi/cbeci/mining_map
+
+
+
+
+
+
+
+
+
+
+
+

@@ -43,7 +43,7 @@ estimating Bitcoin transaction electronic waste with some modifications
   calculations. Consequently, for the e-waste calculation in this plugin, the average lifespan of all equipment is also
   assumed to be 5 years.
 
-3. Steps for estimating bitcoin e waste:
+3. Steps for estimating bitcoin transaction e waste:
 
 - `Selecting mining equipment`:
   + A list of active equipment, the [CBECI list](http://sha256.cbeci.org/) is used
@@ -90,12 +90,14 @@ estimating Bitcoin transaction electronic waste with some modifications
 
 - `Calculate ewaste per bitcoin transaction`:
   + After the `e-waste per day` of the entire Bitcoin network is available, the plugin will attempt to find the
-    relationship between electronic waste and hash rate through linear regression.
+    relationship between daily electronic waste and average daily hash rate through linear regression.
     `ewaste = b0 + b1*hashrate`
   + If a model with a high R-squared value is found, it will be utilized to calculate the e-waste for each Bitcoin
     transaction on a given day as follows: `( b0 + b1*hashrate(d)) / (total transactions (d))`
 
-
+### Reference
+1. CBECI methodology: https://ccaf.io/cbnsi/cbeci/methodology
+2. Paper on bitcoin e waste by Alex de Vries and Christian Stoll: https://www.researchgate.net/publication/354554919_Bitcoin's_growing_e-waste_problem
 
 
 
