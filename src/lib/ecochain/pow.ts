@@ -30,11 +30,11 @@ export const powCalculation = (
     const miningSharesFile = input['mining_shares_file'];
     const output: any = {};
     models.map(model => {
-      const type = model['type'];
+      const impact = model['impact'];
       const b0 = model['b0'];
       const b1 = model['b1'];
-      if (type === 'fresh_water') {
-        output[type] = powWaterConsumption(
+      if (impact === 'fresh_water') {
+        output[impact] = powWaterConsumption(
           b0,
           b1,
           hashRate,
@@ -43,8 +43,8 @@ export const powCalculation = (
           defaulMiningShares,
           electricityWaterIntensity
         );
-      } else if (type === 'land') {
-        output[type] = powLandUsage(
+      } else if (impact === 'land') {
+        output[impact] = powLandUsage(
           b0,
           b1,
           hashRate,
@@ -55,7 +55,7 @@ export const powCalculation = (
           electricityGenerationLandUseIntensity
         );
       } else {
-        output[type] = (b0 + b1 * hashRate) / dailyTransactions;
+        output[impact] = (b0 + b1 * hashRate) / dailyTransactions;
       }
     });
     return {

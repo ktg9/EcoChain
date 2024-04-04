@@ -140,5 +140,5 @@ will receive information on how much emission their transactions emit as output.
 ### Reference
 1. CCRI methodology on POS power demand: https://carbon-ratings.com/dl/pos-report-2023
 2. CCRI api: https://v2.api.carbon-ratings.com/documentation
-
+3. Gas and fee docs: https://ethereum.org/en/developers/docs/gas/
 

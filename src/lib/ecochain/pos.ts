@@ -20,9 +20,9 @@ export const posCalculation = (
     const output: any = {};
     // Loop through each model and calculate
     models.map(model => {
-      const type = model['type'];
+      const impact = model['impact'];
       const b1 = model['b1'];
-      output[type] = b1 * gasUsed * nodeCount;
+      output[impact] = b1 * gasUsed * nodeCount;
     });
     return {
       ...input,

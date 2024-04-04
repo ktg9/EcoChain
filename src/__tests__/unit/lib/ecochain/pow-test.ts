@@ -19,22 +19,26 @@ describe('pow.ts', () => {
 
       const models: any[] = [
         {
-          type: 'carbon',
+          type: 'linear_regression',
+          impact: 'carbon',
           b0: 45854865.89077085,
           b1: 3.21680913e-13,
         },
         {
-          type: 'ewaste',
+          type: 'linear_regression',
+          impact: 'ewaste',
           b0: 9302292.008423146,
           b1: 4.42885761e-14,
         },
         {
-          type: 'fresh_water',
+          type: 'linear_regression',
+          impact: 'fresh_water',
           b0: 90595506.70413834,
           b1: 6.35545318e-13,
         },
         {
-          type: 'land',
+          type: 'linear_regression',
+          impact: 'land',
           b0: 90595506.70413834,
           b1: 6.35545318e-13,
         },

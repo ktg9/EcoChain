@@ -11,7 +11,8 @@ describe('pos.ts', () => {
         {
           b0: 10000,
           b1: 1e-10,
-          type: 'carbon',
+          type: 'linear_regression',
+          impact: 'carbon',
         },
       ];
       const result = posCalculation(inputs, models);

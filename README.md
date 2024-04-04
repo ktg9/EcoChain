@@ -1,7 +1,7 @@
 # Green Software Foundation Carbon Hack 2024
 
 Project name: EcoChain - Sustainable Blockchain Environmental Impacts Measurement<br>
-Author: ktg9 (Ky Tran)
+Author: [ktg9](https://github.com/ktg9) (Ky Tran)
 
 ## Introduction
 
@@ -73,7 +73,49 @@ plugin: to demonstrate to the majority of blockchain users the environmental imp
    you'll find a file (or multiple files) that outlines the calculation process,
    e.g [data/pow/bitcoin/Bitcoin-transaction-ewaste.md](data/pow/bitcoin/Bitcoin-transaction-ewaste.md)
 
+4. [config](config): Contains config file used in the source codes:
+  - [ecochain_metadata.json](config/ecochain_metadata.json):
+    + `supported_blockchains`: contains supported blockchains, this is used for
+      validating user input
+    + `blockchain_config`: contains each blockchain information along with
+      their models for environmental impact calculation. These numbers are derived
+      from the result of [data](data) folder calculation. For example:
+    ```json
+    {
+     "name": "Bitcoin Cash",
+     "type": "pow",
+     "models": [
+       {
+         "type": "linear_regression",
+         "impact": "carbon",
+         "b0": 225.00629710408225,
+         "b1": 3.93560793e-16
+       }
+     ]
+    }
+    ```
+  - [electricity_generation_land_use_intensity.json](config/electricity_generation_land_use_intensity.json): contains
+    information about land usage intensity in m2/kWh/year of electricity generation technologies.
+  - [electricity_mix_by_countries.json](config/electricity_mix_by_countries.json): electricity mix (shares) in percent by countries
+  crawled from IEA (International Energy Agency)
+  - [electricity_water_intensity.json](config/electricity_water_intensity.json): electricity water intensity
+  in L/kWh by countries.
 
+### Result Summary
+
+List of supported blockchains and their environmental impacts:
+
+- [Bitcoin (btc)](data/pow/bitcoin): carbon emission, electronic waste, fresh water consumption, land consumption.
+- [Bitcoin cash (bch)](data/pow/bitcoin_cash): carbon emission
+- [Bitcoin SV (bsv)](data/pow/bitcoin_sv): carbon emission
+- [Dash (dash)](data/pow/dash): carbon emission
+- [Dogecoin (doge)](data/pow/dogecoin): carbon emission
+- [Litecoin (ltc)](data/pow/litecoin): carbon emission
+- [Solana (sol)](data/pos/solana): carbon emission
+- [Avalanche (avax)](data/pos/avalanche): carbon emission
+
+[Ethereum (eth)](data/pos/ethereum) is analyzed but the result model is not good enough
+for calculating emission.
 
 
 
