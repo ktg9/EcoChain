@@ -29,7 +29,7 @@
 ![Bitcoin Cash Emissions Hashrate Linear Regression](img/bitcoin_cash_emissions_hashrate_linear_regression.png)
 
 
-- Regression parameters are `b0: 225006.29710408265 , b1 : [3.93560793e-13]`
+- Regression parameters are `b0: 225006297.10408258 , b1 : [3.93560793e-10]`
 
 
 

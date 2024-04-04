@@ -28,7 +28,7 @@
 
 ![Dogecoin Emissions Hashrate Linear Regression](img/dogecoin_emissions_hashrate_linear_regression.png)
 
-- Regression parameters are `b0: 1046.6121578388102 , b1 : [5.62926756e-12]`
+- Regression parameters are `b0: 1046612157.83881 , b1 : [5.62926756e-06]`
 
 
 

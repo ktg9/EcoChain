@@ -28,7 +28,7 @@
 
 ![Litecoin Emissions Hashrate Linear Regression](img/litecoin_emissions_hashrate_linear_regression.png)
 
-- Regression parameters are `b0: 217790.9735055901 , b1 : [6.67931768e-09]`
+- Regression parameters are `b0: 217790973.50559044 , b1 : [6.67931768e-06]`
 
 
 

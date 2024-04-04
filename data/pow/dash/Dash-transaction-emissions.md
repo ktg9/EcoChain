@@ -29,7 +29,7 @@
 ![Dash Cash Emissions Hashrate Linear Regression](img/dash_emissions_hashrate_linear_regression.png)
 
 
-- Regression parameters are `b0: 4557.8714524787065 , b1 : [4.36287796e-11]`
+- Regression parameters are `b0: 4557871.452478692 , b1 : [4.36287796e-08]`
 
 
 
