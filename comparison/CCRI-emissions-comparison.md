@@ -1,6 +1,6 @@
 ### Compare emission plugin results with CCRI API emission results
 
-This file demonstrate a comparison between plugin results and CCRI API results
+This file demonstrate a comparison between plugin results and [CCRI API](https://v2.api.carbon-ratings.com/documentation#) results
 
 1. Proof of work blockchain
 
