@@ -1,0 +1,21 @@
+name: ecochain-demo
+description:
+tags:
+initialize:
+  plugins:
+    ecochain:
+      path: 'https://github.com/ktg9/EcoChain'
+      method: EcoChain
+      global-config:
+        blockchain: btc
+tree:
+  children:
+    child-0:
+      pipeline:
+        - ecochain
+      inputs:
+        - hash_rate: 576.04e18
+          daily_transactions: 297442
+
+
+

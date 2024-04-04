@@ -15,7 +15,7 @@ if os.path.exists(emission_raw_file_path):
 
     emissions_data = ["Date,Emissions(g)"]
     for entry in json_data["entries"]:
-        emissions_data.append("{},{}".format(entry["date"], entry["emissions_24h"] * 1000000 * 1000))
+        emissions_data.append("{},{}".format(entry["date"], entry["emissions_24h"] * 1000000))
 
     emissions_file.write("\n".join(emissions_data))
 

@@ -21,8 +21,8 @@ describe('pow.ts', () => {
         {
           type: 'linear_regression',
           impact: 'carbon',
-          b0: 45854865.89077085,
-          b1: 3.21680913e-13,
+          b0: 45854.86589077092,
+          b1: 3.21680913e-16,
         },
         {
           type: 'linear_regression',
@@ -116,7 +116,7 @@ describe('pow.ts', () => {
         {
           hash_rate: 576040000000000000000,
           daily_transactions: 297442,
-          carbon: 777.1462638608228,
+          carbon: 0.777146263860823,
           ewaste: 117.04562027241327,
           fresh_water: 32618.398678432943,
           land: 39.68218341744669,
