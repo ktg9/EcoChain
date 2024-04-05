@@ -50,6 +50,8 @@ To do this, the methodology relies on 2 data sources:
   For example, [us electricity sources](https://www.iea.org/countries/united-states/electricity)
 
 ![IEA electricity sources](img/land_iea_example.png)
+For "unknown" or "Other" part in mining map - which means no country data is available, the [world average](https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser?country=WORLD&fuel=Energy%20supply&indicator=ElecGenByFuel) energy mix
+is used.
 
 Here, we need to make the assumption that the electricity used for Bitcoin mining is distributed in alignment with each
 country's electricity distribution across various technologies (such as coal, oil, etc.).

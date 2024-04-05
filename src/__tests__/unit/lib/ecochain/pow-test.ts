@@ -119,7 +119,7 @@ describe('pow.ts', () => {
           carbon: 777146.2638608229,
           ewaste: 117.04562027241327,
           fresh_water: 32618.398678432943,
-          land: 39.68218341744669,
+          land: 43.99694262855391,
         },
       ];
       expect(result).toStrictEqual(expectedResult);
@@ -241,7 +241,7 @@ describe('pow.ts', () => {
         electricityMixByCountries,
         electricityGenerationLandUseIntensity
       );
-      const expectedResult = 39.68218341744669;
+      const expectedResult = 43.99694262855391;
       expect(result).toStrictEqual(expectedResult);
     });
   });

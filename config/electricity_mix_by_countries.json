@@ -76,5 +76,15 @@
     "Hydro": 4.6,
     "Solar PV": 0.18,
     "Wind": 0.22
+  },
+  "Unknown": {
+    "Coal": 36,
+    "Natural Gas": 23,
+    "Biomass": 2.17,
+    "Nuclear":9.84,
+    "Hydro": 15.5,
+    "Solar PV": 3.57,
+    "Solar CSP": 0.05,
+    "Wind": 6.53
   }
 }
