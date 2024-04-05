@@ -20,6 +20,7 @@ average_electricity_water_intensity = (sum(
   electricity_water_intensity_data[x]['electricity_water_intensity']
   for x in electricity_water_intensity_data.keys()) / (len(electricity_water_intensity_data.keys())))
 
+# For unknown - no country data available, then the water intensity will be the average of all countries
 electricity_water_intensity_data['Unknown'] = {
   'electricity_water_intensity': average_electricity_water_intensity,
   'unit': 'litre/kWh'

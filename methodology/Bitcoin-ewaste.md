@@ -39,9 +39,10 @@ estimating Bitcoin transaction electronic waste with some modifications
 - `Mining nodes ('miners') are rational economic agents that only use profitable hardware`, this is also
   an important predicate for CBECI methodology
 - `Mining equipment has economic lifetime of 5 years`, a standard accepted in the CBECI methodology.
-  In this context, 'economic lifetime' refers to the period after which the mining equipment is no longer considered in
+  In this context, `economic lifetime` refers to the period after which the mining equipment is no longer considered in
   calculations. Consequently, for the e-waste calculation in this plugin, the average lifespan of all equipment is also
   assumed to be 5 years.
+  This point is also supported by this [research](https://www.sciencedirect.com/science/article/pii/S2096720923000441?via%3Dihub#fn0160)
 
 3. Steps for estimating bitcoin transaction e waste:
 
