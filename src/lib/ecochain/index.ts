@@ -1,6 +1,6 @@
 import {PluginParams} from './types';
 
-import {EcoChainGlobalConfig} from './types';
+import {EcoChainGlobalConfig, PluginInterface} from './types';
 import {validateGlobalConfig} from './validation';
 import {powCalculation} from './pow';
 import {posCalculation} from './pos';
@@ -9,10 +9,7 @@ import * as path from 'path';
 
 export const EcoChain = (
   globalConfig: EcoChainGlobalConfig
-): {
-  metadata: {kind: string};
-  execute: (inputs: PluginParams[]) => PluginParams[];
-} => {
+): PluginInterface => {
   const metadata = {
     kind: 'execute',
   };
@@ -82,7 +79,7 @@ export const EcoChain = (
   /**
    * Calculate pow or pos environmental impacts
    */
-  const execute = (inputs: PluginParams[]): PluginParams[] => {
+  const execute = async (inputs: PluginParams[]): Promise<PluginParams[]> => {
     validateGlobalConfig(globalConfig, supportedBlockchains);
     const blockchain = globalConfig['blockchain'];
     const blockchainType =

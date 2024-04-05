@@ -244,5 +244,39 @@ describe('pow.ts', () => {
       const expectedResult = 43.99694262855391;
       expect(result).toStrictEqual(expectedResult);
     });
+    it('Country does not exist in electricityMixByCountries', () => {
+      expect.assertions(1);
+      const miningSharesFile = path.resolve(
+        __dirname,
+        '..',
+        '..',
+        '..',
+        '..',
+        '..',
+        'config',
+        'bitcoin_mining_shares.json'
+      );
+      const b0 = 90595506.70413834;
+      const b1 = 6.35545318e-13;
+      const hashRate = 576.04e18;
+      const dailyTransactions = 297442;
+
+      const defaultMiningShares = {};
+      const electricityMixByCountries = {};
+      const electricityGenerationLandUseIntensity = {};
+
+      const result = powLandUsage(
+        b0,
+        b1,
+        hashRate,
+        dailyTransactions,
+        miningSharesFile,
+        defaultMiningShares,
+        electricityMixByCountries,
+        electricityGenerationLandUseIntensity
+      );
+      const expectedResult = 0;
+      expect(result).toStrictEqual(expectedResult);
+    });
   });
 });

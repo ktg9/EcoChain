@@ -2,7 +2,7 @@ import {EcoChain} from '../../../../lib';
 import {expect} from '@jest/globals';
 
 describe('Execute()', () => {
-  it('pow calculation', () => {
+  it('pow calculation', async () => {
     expect.assertions(1);
     const globalConfig = {
       blockchain: 'btc',
@@ -19,7 +19,7 @@ describe('Execute()', () => {
       },
     ];
 
-    const result = ecoChain.execute([
+    const result = await ecoChain.execute([
       {
         hash_rate: 576.04e18,
         daily_transactions: 297442,
@@ -27,7 +27,7 @@ describe('Execute()', () => {
     ]);
     expect(result).toStrictEqual(expectedResult);
   });
-  it('pos calculation', () => {
+  it('pos calculation', async () => {
     const globalConfig = {
       blockchain: 'sol',
     };
@@ -39,7 +39,7 @@ describe('Execute()', () => {
         carbon: 0.002438937072,
       },
     ];
-    const result = ecoChain.execute([
+    const result = await ecoChain.execute([
       {
         gas_used: 80000,
         node_count: 3000,

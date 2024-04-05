@@ -1,0 +1,21 @@
+name: ecochain-demo
+description:
+tags:
+initialize:
+  plugins:
+    ecochain:
+      path: 'https://github.com/ktg9/EcoChain'
+      method: EcoChain
+      global-config:
+        blockchain: sol
+tree:
+  children:
+    child-0:
+      pipeline:
+        - ecochain
+      inputs:
+        - gas_used: 241929
+          node_count: 1727
+
+
+
