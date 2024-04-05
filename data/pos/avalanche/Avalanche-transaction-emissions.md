@@ -1,4 +1,4 @@
-## Avalanche C transaction emissions calculation
+## Avalanche transaction emissions calculation
 
 ### Data source and data preprocessing
 
