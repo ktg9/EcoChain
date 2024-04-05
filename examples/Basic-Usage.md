@@ -25,21 +25,21 @@ Bitcoin hash rate and daily transactions data could be retrieved from [bitinfoch
 Outputs:
 ```json
  [
-          {
-            "hash_rate": 576040000000000000000,
-            "daily_transactions": 297442,
-            "carbon": 0.777146263860823,
-            "ewaste": 117.04562027241327,
-            "fresh_water": 32618.398678432943,
-            "land": 39.68218341744669
-          }
-        ]
+  {
+    "hash_rate": 576040000000000000000,
+    "daily_transactions": 297442,
+    "carbon": 777146.2638608229,
+    "ewaste": 117.04562027241327,
+    "fresh_water": 32618.398678432943,
+    "land": 39.68218341744669
+  }
+]
 ```
 The unit here is carbon(gCO2), ewaste(g), fresh water (L) and land (m2/year).
 So the output shows your bitcoin transaction impact:
-- Emit 0.777146263860823 of Co2 
+- Emit 777146 g or 777kg of Co2 
 - Cause 117 g of electronic waste
 - Consumes 32618 litres of fresh water
 - Use 39 m2 of land for 1 year
 
-### 
+

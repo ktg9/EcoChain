@@ -101,6 +101,10 @@ plugin: to demonstrate to the majority of blockchain users the environmental imp
   - [electricity_water_intensity.json](config/electricity_water_intensity.json): electricity water intensity
   in L/kWh by countries.
 
+5. [comparison](comparison) Compare the plugin calculation of blockchain 
+environmental impacts with other organizations estimation.
+
+6. [examples](examples) Give examples of use cases of this plugin
 ### Result Summary
 
 List of supported blockchains and their environmental impacts:
