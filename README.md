@@ -30,6 +30,7 @@ Author: [ktg9](https://github.com/ktg9) (Ky Tran)
    e.g [data/pow/bitcoin/Bitcoin-transaction-ewaste.md](data/pow/bitcoin/Bitcoin-transaction-ewaste.md)
 
 4. [config](config): Contains config file used in the source codes:
+
 - [ecochain_metadata.json](config/ecochain_metadata.json):
   + `supported_blockchains`: contains supported blockchains, this is used for
     validating user input
@@ -52,7 +53,8 @@ Author: [ktg9](https://github.com/ktg9) (Ky Tran)
   ```
 - [electricity_generation_land_use_intensity.json](config/electricity_generation_land_use_intensity.json): contains
   information about land usage intensity in m2/kWh/year of electricity generation technologies.
-- [electricity_mix_by_countries.json](config/electricity_mix_by_countries.json): electricity mix (shares) in percent by countries
+- [electricity_mix_by_countries.json](config/electricity_mix_by_countries.json): electricity mix (shares) in percent by
+  countries
   crawled from IEA (International Energy Agency)
 - [electricity_water_intensity.json](config/electricity_water_intensity.json): electricity water intensity
   in L/kWh by countries.
@@ -104,24 +106,23 @@ I believe that quantifying the environmental impact associated with users' actio
 educate users about the environmental issues related to blockchain technology as a whole. That's the purpose of this
 plugin: to demonstrate to the majority of blockchain users the environmental impact of their actions.
 
-
 ### Result Summary
 
-List of supported blockchains and their environmental impacts:
+Below is a table summarizing supported blockchains and their environmental impacts:
 
-- [Bitcoin (btc)](data/pow/bitcoin): carbon emission, electronic waste, fresh water consumption, land consumption.
-- [Bitcoin cash (bch)](data/pow/bitcoin_cash): carbon emission
-- [Bitcoin SV (bsv)](data/pow/bitcoin_sv): carbon emission
-- [Dash (dash)](data/pow/dash): carbon emission
-- [Dogecoin (doge)](data/pow/dogecoin): carbon emission
-- [Litecoin (ltc)](data/pow/litecoin): carbon emission
-- [Solana (sol)](data/pos/solana): carbon emission
-- [Avalanche (avax)](data/pos/avalanche): carbon emission
+
+| Blockchain                                  | Carbon emission | Electronic waste | Fresh water consumption | Land conversion |
+|---------------------------------------------|-----------------|------------------|-------------------------|-----------------|
+| [Bitcoin (btc)](data/pow/bitcoin)           | ✅               | ✅                | ✅                       | ✅               |
+| [Bitcoin cash (bch)](data/pow/bitcoin_cash) | ✅               | ❌                | ❌                       | ❌               |
+| [Bitcoin SV (bsv)](data/pow/bitcoin_sv)     | ✅               | ❌                | ❌                       | ❌               |
+| [Dash (dash)](data/pow/dash)                | ✅               | ❌                | ❌                       | ❌               |
+| [Dogecoin (doge)](data/pow/dogecoin)        | ✅               | ❌                | ❌                       | ❌               |
+| [Litecoin (ltc)](data/pow/litecoin)         | ✅               | ❌                | ❌                       | ❌               |
+| [Avalanche (avax)](data/pos/avalanche)      | ✅               | ❌                | ❌                       | ❌               |
 
 [Ethereum (eth)](data/pos/ethereum) is analyzed but the result model is not good enough
 for calculating emission.
-
-
 
 
 
