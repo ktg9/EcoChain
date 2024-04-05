@@ -10,17 +10,6 @@ Author: [ktg9](https://github.com/ktg9) (Ky Tran)
 2. [methodology](methodology): Contains markdown files demonstrating
    the methodology for calculating blockchain environmental impacts:
 
-- [Proof-of-stake-emissions.md](methodology/Proof-of-stake-emissions.md): methodology for calculating
-  Proof of stake blockchains transaction emission
-- [Proof-of-work-emissions.md](methodology/Proof-of-work-emissions.md): methodology for calculating
-  Proof of work blockchains transaction emission
-- [Bitcoin-ewaste.md](methodology/Bitcoin-ewaste.md): methodology for calculating
-  Bitcoin transaction electronic waste
-- [Bitcoin-water-consumption.md](methodology/Bitcoin-water-consumption.md): methodology for calculating
-  Bitcoin transaction water consumption
-- [Bitcoin-land-usage.md](methodology/Bitcoin-land-usage.md): methodology for calculating Bitcoin transaction
-  land usage
-
 3. [data](data): This repository contains the source code (in Python) for calculating parameters required by the plugin,
    such as
    linear regression parameters. It also provides details on the data sources necessary for calculating these
@@ -30,34 +19,6 @@ Author: [ktg9](https://github.com/ktg9) (Ky Tran)
    e.g [data/pow/bitcoin/Bitcoin-transaction-ewaste.md](data/pow/bitcoin/Bitcoin-transaction-ewaste.md)
 
 4. [config](config): Contains config file used in the source codes:
-
-- [ecochain_metadata.json](config/ecochain_metadata.json):
-  + `supported_blockchains`: contains supported blockchains, this is used for
-    validating user input
-  + `blockchain_config`: contains each blockchain information along with
-    their models for environmental impact calculation. These numbers are derived
-    from the result of [data](data) folder calculation. For example:
-  ```json
-  {
-   "name": "Bitcoin Cash",
-   "type": "pow",
-   "models": [
-     {
-       "type": "linear_regression",
-       "impact": "carbon",
-       "b0": 225.00629710408225,
-       "b1": 3.93560793e-16
-     }
-   ]
-  }
-  ```
-- [electricity_generation_land_use_intensity.json](config/electricity_generation_land_use_intensity.json): contains
-  information about land usage intensity in m2/kWh/year of electricity generation technologies.
-- [electricity_mix_by_countries.json](config/electricity_mix_by_countries.json): electricity mix (shares) in percent by
-  countries
-  crawled from IEA (International Energy Agency)
-- [electricity_water_intensity.json](config/electricity_water_intensity.json): electricity water intensity
-  in L/kWh by countries.
 
 5. [comparison](comparison) Compare the plugin calculation of blockchain
    environmental impacts with other organizations estimation.
@@ -109,7 +70,6 @@ plugin: to demonstrate to the majority of blockchain users the environmental imp
 ### Result Summary
 
 Below is a table summarizing supported blockchains and their environmental impacts:
-
 
 | Blockchain                                  | Carbon emission | Electronic waste | Fresh water consumption | Land conversion |
 |---------------------------------------------|-----------------|------------------|-------------------------|-----------------|
