@@ -45,8 +45,8 @@ So the output shows your bitcoin transaction impact:
 ### Calculate Solana transaction carbon emission
 Calculate carbon emission for this [transaction](https://explorer.solana.com/tx/27q7NcqjQBHPGWidFg5vB2eY6ih5B1kXhyf4RguPsWuki4PJUcWMDtVfGZxvPuZi5EC2ATh3Ac7VkKipHJoEeEjU)
 
-Total compute unit: 241929
-Total node count (validators): 1727, get data from [this site](https://www.validators.app)
+- Total compute unit: 241929
+- Total node count (validators): 1727 (get from [this site](https://www.validators.app))
 Input: [basic_usage_sol.yml](yml/basic_usage_sol.yml)
 
 ```yaml

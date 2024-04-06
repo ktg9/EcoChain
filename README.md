@@ -1,6 +1,6 @@
 # Green Software Foundation Carbon Hack 2024
 
-Project name: EcoChain - Sustainable Blockchain Environmental Impacts Measurement<br>
+Project name: EcoChain - Sustainable Blockchain Transaction Environmental Impacts Measurement<br>
 Author: [ktg9](https://github.com/ktg9) (Ky Tran)
 
 ### Project structure
@@ -67,6 +67,10 @@ I believe that quantifying the environmental impact associated with users' actio
 educate users about the environmental issues related to blockchain technology as a whole. That's the purpose of this
 plugin: to demonstrate to the majority of blockchain users the environmental impact of their actions.
 
+To achieve this goal, the plugin will calculate the environmental impacts (carbon emissions, electronic waste,
+freshwater consumption, and land conversion) of each blockchain transaction instead of attempting to generate a single
+number for the entire blockchain.
+
 ### Result Summary
 
 Below is a table summarizing supported blockchains and their environmental impacts:
@@ -79,6 +83,7 @@ Below is a table summarizing supported blockchains and their environmental impac
 | [Dash (dash)](data/pow/dash)                | ✅               | ❌                | ❌                       | ❌               |
 | [Dogecoin (doge)](data/pow/dogecoin)        | ✅               | ❌                | ❌                       | ❌               |
 | [Litecoin (ltc)](data/pow/litecoin)         | ✅               | ❌                | ❌                       | ❌               |
+| [Solana](data/pos/solana)                   | ✅               | ❌                | ❌                       | ❌               |
 | [Avalanche (avax)](data/pos/avalanche)      | ✅               | ❌                | ❌                       | ❌               |
 
 [Ethereum (eth)](data/pos/ethereum) is analyzed but the result model is not good enough
