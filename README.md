@@ -89,7 +89,11 @@ Below is a table summarizing supported blockchains and their environmental impac
 [Ethereum (eth)](data/pos/ethereum) is analyzed but the result model is not good enough
 for calculating emission.
 
-
+The unit of outputs is as follows:
+- Carbon emission: gram CO2 (gCO2) 
+- Electronic waste: gram (g)
+- Fresh Water consumption: litre (L)
+- Land conversion: m2/year (square meters per year)
 
 
 
