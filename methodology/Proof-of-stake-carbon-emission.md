@@ -130,7 +130,7 @@ The methodology is explained in these steps:
   `emission per node (gC02) = b0 + b1*gas`
   We can interpret this result as 1 gas will increase the emission by b1(gC02)
 - The transaction emission is calculated as:
-  = `(emission per node) * (total number of node)`
+  = `b1 * gas * (total number of node)`
 
 
 In summary, users will input the current total number of nodes and the amount of gas their transactions consume. They
