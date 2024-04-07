@@ -1,4 +1,4 @@
-## Methodology for calculating proof of work blockchain transactions emission
+## Methodology for calculating proof of work blockchain transactions carbon emission
 
 ### PoW (Proof of work) blockchain definition
 

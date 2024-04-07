@@ -1,4 +1,4 @@
-# Methodology for calculating proof of state blockchain transactions emission
+# Methodology for calculating proof of state blockchain transactions carbon emission
 
 ### Overview
 
