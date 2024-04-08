@@ -65,7 +65,7 @@ estimating Bitcoin transaction electronic waste with some modifications
   ![Profitability chart](img/ewaste_profitability_chart.png)
 
 - `Create a list of profitable mining equipments`:
-  +On a given day, we can generate a list of profitable mining equipment by comparing the profitability threshold with
+  + On a given day, we can generate a list of profitable mining equipment by comparing the profitability threshold with
   the parameters of all mining equipment
 - `Calculate weighting factors for each profitable mining quipments`:
   + Each profitable mining equipment is assigned a weight factor, which is determined by a function based on the current
@@ -87,7 +87,7 @@ estimating Bitcoin transaction electronic waste with some modifications
 
 - `Calculate ewaste per day`:
   + Since the economic lifespan of all equipment is assumed to be 5 years, the electronic waste per day of Bitcoin
-    equals the total equipment amount divided by (5 * 365.25).
+    =  `(total equipment amount) / (5 * 365.25)`.
 
 - `Calculate ewaste per bitcoin transaction`:
   + After the `e-waste per day` of the entire Bitcoin network is available, the plugin will attempt to find the

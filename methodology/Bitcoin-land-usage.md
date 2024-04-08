@@ -33,25 +33,25 @@ and data from [CCRI API](https://v2.api.carbon-ratings.com/documentation). Below
 2. Electricity production LUI estimates the amount of land needed to generate electricity.. For example:
 
 ![Land Use Intensity of electricity production](img/land_LUI_examples.png)
-The unit here is ha/TWH/y so can see from column `LUIE Median` that to produce 1 TWH of `Hydroelectric`,
+The unit here is ha/TWH/y; for example from column `LUIE Median`, to produce 1 TWH of `Hydroelectric`,
 650 ha of land must be used in a year.
 The plugin uses LUI values of
 this [research](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0270155#pone-0270155-t001).
 
 3. With the provided data, we can approximate the amount of land utilized by Bitcoin by considering its electricity
    consumption and the distribution of electricity consumption across various technologies (such as hydroelectric,
-   nuclear, etc.).
-
-To do this, the methodology relies on 2 data sources:
+   nuclear, etc.). To do this, the methodology relies on 2 data sources:
 
 - [CCAF mining map](https://ccaf.io/cbnsi/cbeci/mining_map), this information offers insights into the distribution of
   Bitcoin's total hashrate (e.g., China 21.1%, US 37.8%, etc.). The methodology operates under the assumption that the
   distribution of hashrate is also representative of the distribution of power demand.
+- The energy mix of countries provided by IEA (International Energy Agency)
   For example, [us electricity sources](https://www.iea.org/countries/united-states/electricity)
 
 ![IEA electricity sources](img/land_iea_example.png)
-For "unknown" or "Other" part in mining map - which means no country data is available, the [world average](https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser?country=WORLD&fuel=Energy%20supply&indicator=ElecGenByFuel) energy mix
-is used.
+Part of the mining map provided by CCAF does not belong to any country (denoted by 'Other' in their map). In that case,
+the [world average](https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser?country=WORLD&fuel=Energy%20supply&indicator=ElecGenByFuel)
+energy mix is used.
 
 Here, we need to make the assumption that the electricity used for Bitcoin mining is distributed in alignment with each
 country's electricity distribution across various technologies (such as coal, oil, etc.).

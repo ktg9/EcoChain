@@ -15,7 +15,7 @@ it will be terminated, so we need to run a query multiple times for different da
   this with different `blocktime` range each time to avoid timeout error.
 
 File [solana_preprocess_data.py](solana_preprocess_data.py) is responsible for cleaning data.
-The output is file [solana_gas.csv](data/solana_gas.csv) and
+The output are file [solana_gas.csv](data/solana_gas.csv) and
 file [solana_transactions.csv](data/solana_transactions.csv)
 
 ### Solana emissions gas regression

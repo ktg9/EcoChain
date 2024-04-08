@@ -54,9 +54,9 @@ and data from [CCRI API](https://v2.api.carbon-ratings.com/documentation)
   demand and the mining shares of each country. Mining shares provide information about the average hashrate share held
   by each country (e.g., US: 30%, China: 20%, etc.).
 
-Indirect water consumption = `sum(country_share * total power demand * country_water_intensity)`
+- Indirect water consumption = `sum(country_share * total power demand * country_water_intensity)`
 
-Note that in this calculation, we also assume that the distribution of hashrate corresponds to the distribution of
+- Note that in this calculation, we also assume that the distribution of hashrate corresponds to the distribution of
 electricity consumption.
 
 - [CCAF](https://ccaf.io/cbnsi/cbeci/mining_map) has a mining shares map we can reference
@@ -69,7 +69,6 @@ electricity consumption.
   + direct water consumption = 1.8 * power demand
   + indirect water consumption = sum(country_water_intensity * country_share * power_demand)
 - Water consumption per Bitcoin transaction can then be calculated as `(daily water consumption)/(daily transactions)`
-- File data/pow/bitcoin/Bitcoin-power-demand.md explains how to calculate linear regression model.
 
 ### Reference
 
